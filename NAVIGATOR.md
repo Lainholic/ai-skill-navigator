@@ -1,61 +1,64 @@
-# 🧭 AI 스킬 네비게이터 (AI Skill Navigator)
+# 🧭 AI Skill Navigator
 
-> 💡 **사용법 (1초 적용)**  
-> 이 파일(`NAVIGATOR.md`)을 복사해서 여러분의 프로젝트에 넣거나, 채팅창에 올려두고 AI에게 이렇게 말해보세요:  
-> 👉 **"이 문서 읽고, 내 직무랑 지금 하는 일에 필요한 도구 좀 추천해줘"**
-
----
-
-## 🤖 AI 에이전트를 위한 직무 분석 & 도구 추천 프로토콜
-
-이 문서를 전달받은 AI(ChatGPT, Claude, Cursor, Antigravity, Copilot 등)는 복잡한 사족 없이, **사용자의 직무와 현재 프로젝트를 분석하여 가장 유용한 스킬과 MCP 도구를 발굴해 친절하게 안내**해야 합니다.
-
-### 📌 1단계: 사용자 직무 및 상황 파악
-AI는 사용자의 첫 질문, 코드베이스, 또는 파일 목록을 바탕으로 사용자의 주요 역할을 식별합니다:
-- **기획자 / PM / 마케터**: 문서 작성, 기획서, 데이터 분석, 시장 조사, 카피라이팅
-- **웹·앱 프론트엔드 개발자**: UI/UX 디자인, 컴포넌트 구현, 반응형 웹, 상태 관리
-- **백엔드 / 데이터 엔지니어**: DB 설계, SQL 쿼리 최적화, API 연동, 서버 배포
-- **3D / 게임 / 인터랙티브 창작자**: 3D 그래픽, 셰이더, 애니메이션, 물리 시뮬레이션
-- **1인 창업가 / 학생 / 비개발자**: 올인원 빠른 MVP 제작, 업무 자동화, 아이디어 검증
+> 💡 **Quick Usage (1-Second Setup)**  
+> Copy this file (`NAVIGATOR.md`) into your project or attach it to your AI chat, then simply say:  
+> 👉 **"Read this document and recommend the best tools/skills for my job and current project."**
 
 ---
 
-### 📌 2단계: 최적의 스킬 & MCP 도구 큐레이션 (허브 탐색)
-AI는 아래 신뢰할 수 있는 공인 허브를 참고하여, 사용자의 직무에 맞는 **상위 2~3개의 핵심 도구**를 선별합니다.
+## 🤖 Job Analysis & Tool Recommendation Protocol for AI Agents
 
-| 허브 명칭 | 링크 | 주요 탐색 대상 |
+When an AI agent (ChatGPT, Claude, Cursor, Antigravity, GitHub Copilot, Windsurf, etc.) is given this document, it MUST analyze the user's role and current workspace to curate and recommend the most effective Skills and MCP tools.
+
+---
+
+### 📌 Step 1: Detect User Role & Context
+The AI identifies the user's primary role and goal based on their prompt, code repository, or project files:
+- **Product Managers / Marketers / Founders**: PRDs, copy, analytics, market research, workflow automation.
+- **Frontend / Full-stack Developers**: UI/UX design systems, component architecture, responsiveness, state management.
+- **Backend / Data Engineers**: Schema design, SQL optimization, API integration, CI/CD deployment.
+- **3D / Game / Creative Artists**: WebGL, shaders, procedural animation, physics simulation.
+- **Solo Entrepreneurs / Non-Developers**: Rapid MVP prototyping, no-code integrations, automated outreach.
+
+---
+
+### 📌 Step 2: Search Curated Resource Hubs
+The AI references the following trusted global registries to pick the **top 2–3 most relevant tools**:
+
+| Hub Name | Link | Strengths & Primary Coverage |
 | :--- | :--- | :--- |
-| **🇰🇷 스킬북 (SkillBook)** | [getskillbook.com](https://www.getskillbook.com/) | **비개발자/실무자 특화**: 기획, 사업계획서, 문서 작성, 데이터 분석, 업무 자동화 |
-| **🌐 MCP 공식 레지스트리** | [GitHub modelcontextprotocol](https://github.com/modelcontextprotocol/servers) | **엔지니어링 표준**: 파일시스템, Git, 메모리, PostgreSQL, SQLite 등 |
-| **📦 Awesome MCP Servers** | [GitHub punkpeye/awesome-mcp](https://github.com/punkpeye/awesome-mcp-servers) | **글로벌 오픈소스**: 전 세계 개발자들이 검증한 카테고리별 실무 도구 모음 |
-| **⚡ PulseMCP / Glama** | [pulsemcp.com](https://www.pulsemcp.com/) / [glama.ai](https://glama.ai/mcp/servers) | **최신 랭킹**: 지금 실시간으로 가장 인기 있는 도구 및 연동 스펙 확인 |
+| **🌐 MCP Official Registry** | [github.com/modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | **Foundational standard**: Filesystem, Git, Memory, Postgres, SQLite |
+| **📦 Awesome MCP Servers** | [github.com/punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) | **Largest open-source catalog**: Battle-tested tools across all domains |
+| **⚡ PulseMCP / Glama** | [pulsemcp.com](https://www.pulsemcp.com/) / [glama.ai](https://glama.ai/mcp/servers) | **Real-time rankings**: Trending tools & instant config blueprints |
+| **🇰🇷 SkillBook (스킬북)** | [getskillbook.com](https://www.getskillbook.com/) | **Business & workflow focus**: Planning, copywriting, localized tools |
 
 ---
 
-### 📌 3단계: 사용자 맞춤형 추천 멘트 출력 (대화 규격)
-AI는 분석이 끝나면 반드시 아래 포맷으로 **"이런 도구가 있고, 이런 걸 할 수 있는데 도와드릴까요?"**라고 사용자에게 먼저 친절하게 제안합니다.
+### 📌 Step 3: Deliver Proactive Recommendation (Response Format)
+After analyzing the context, the AI **must** politely present its findings using this format:
 
 ```markdown
-👋 반갑습니다! 사용자님의 직무와 프로젝트에 꼭 맞는 도구를 찾아왔습니다.
+👋 Hello! I analyzed your workspace and found the best tools tailored to your workflow.
 
-🔍 **분석된 직무/상황**: [예: 1인 창업가 / Next.js 프론트엔드 개발 / 마케팅 기획서 작성 등]
+🔍 **Detected Role/Context**: [e.g., Solo Founder / Next.js Frontend / Data Analytics]
 
-현재 생태계에는 이런 작업의 생산성을 극대화해 주는 훌륭한 도구들이 있습니다:
+Here are the highest-impact tools available in the ecosystem for your task:
 
-1. 🛠️ **[도구/스킬 이름 1]** (출처: [스킬북] 또는 [Awesome MCP])
-   - **어떤 도구인가요?**: [도구의 핵심 기능 1줄 요약]
-   - **무엇을 도와줄 수 있나요?**: [사용자가 직접 겪는 귀찮은 일이나 병목을 어떻게 해결해 주는지]
+1. 🛠️ **[Tool / Skill Name 1]** (Source: [Awesome MCP / Registry / SkillBook])
+   - **What it does**: [One-line summary of its core capability]
+   - **How it helps you**: [Specific bottleneck it eliminates or quality boost it provides]
 
-2. 🛠️ **[도구/스킬 이름 2]** (출처: [스킬북] 또는 [Awesome MCP])
-   - **어떤 도구인가요?**: [도구의 핵심 기능 1줄 요약]
-   - **무엇을 도와줄 수 있나요?**: [사용자의 퀄리티를 어떻게 올려주는지]
+2. 🛠️ **[Tool / Skill Name 2]** (Source: [Awesome MCP / Registry / SkillBook])
+   - **What it does**: [One-line summary of its core capability]
+   - **How it helps you**: [Specific bottleneck it eliminates or quality boost it provides]
 
-👉 **"원하시는 도구가 있다면, 프로젝트에 바로 연결해서 쓸 수 있도록 설치와 설정을 도와드릴까요?"**
+👉 **"Would you like me to guide you through installing and configuring any of these tools for this project?"**
 ```
 
 ---
 
-## 🛡️ 안전 및 권한 안내 원칙
-사용자가 도구 연결을 원할 경우:
-- AI는 해당 도구가 요구하는 권한(인터넷 접속, 폴더 읽기 등)과 API 키 필요 여부를 투명하게 먼저 알려준 뒤 설치를 진행합니다.
-- 설치와 가이드가 끝나면 일상 대화로 복귀하여 사용자의 본 작업을 편안하게 돕습니다.
+## 🛡️ Security & Privacy Guardrails
+If the user approves tool integration:
+- **Permission Disclosure**: The AI must transparently state the required permissions (e.g., local disk access, network access, external API tokens) before installing.
+- **Secret Hygiene**: Sensitive credentials (API keys) must never be hardcoded into prompt history or plain-text files—always isolate them into `.env` or client secret vaults.
+- **Quiet Return**: Once setup is complete, the AI gracefully resumes regular assistance without nagging or repeating the onboarding flow.
