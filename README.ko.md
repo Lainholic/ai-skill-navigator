@@ -73,6 +73,7 @@ AI는 사용자의 직무와 프로젝트 스택에 맞춰 아래 공인 허브�
 * [**`adversarial-review`**](./skills/adversarial-review/): AI의 자기 긍정 편향을 깨는 1인 2역 악마의 변호인(레드팀) 자가 검증 스킬. *(💡 Pro Tip: 타 모델 API 키 연동 확장 가이드 포함)*
 * [**`verification-before-completion`**](./skills/verification-before-completion/): 실제 터미널 실행 증거 없이 "다 고쳤습니다"라고 구라치는 것을 원천 차단하는 행동 족쇄.
 * [**`session-journal`**](./skills/session-journal/): 복잡한 위키 없이 단 1개 파일(`DEV_JOURNAL.md`)로 세션 간 맥락과 결정을 완벽히 이어받는 초경량 기억 스킬.
+* [**`lite-wiki`**](./skills/lite-wiki/): 단일 `wiki/` 폴더 안의 `INDEX.md`와 `주제별.md` 2단계로 지식을 영구 축적하는 초간단 플랫 위키.
 
 👉 자세한 내용과 사용법은 [**`skills/` 디렉토리 README**](./skills/README.ko.md)를 확인하세요.
 
@@ -92,7 +93,8 @@ ai-skill-navigator/
     ├── README.md        # Global English Skills Guide
     ├── adversarial-review/
     ├── verification-before-completion/
-    └── session-journal/
+    ├── session-journal/
+    └── lite-wiki/
 ```
 
 ---

@@ -13,6 +13,7 @@ Claude Code, Cursor, Antigravity, GitHub Copilot, Windsurf 등 에이전트 스�
 | [**`adversarial-review`**](./adversarial-review/) | AI가 자신이 짠 코드를 '공격자(악마의 변호인)' 모드로 돌변해 자비 없이 털어버리는 적대적 검증 스킬 | 코드가 진짜 완벽한지 불안한 모든 개발자 |
 | [**`verification-before-completion`**](./verification-before-completion/) | 터미널에서 실제 실행/테스트 증거 없이 "다 고쳤습니다"라고 거짓말하는 것을 원천 차단하는 족쇄 | AI의 '다 됐어요' 구라에 데인 적 있는 모든 분 |
 | [**`session-journal`**](./session-journal/) | 복잡한 위키 없이 단 1개 파일(`DEV_JOURNAL.md`)로 세션 간 맥락과 결정을 완벽히 이어받는 초경량 기억 스킬 | 새 창을 열 때마다 AI가 백지화되어 속 터지는 모든 분 |
+| [**`lite-wiki`**](./lite-wiki/) | 단일 `wiki/` 폴더 안의 `INDEX.md`와 `주제별.md` 파일 2단계로 지식을 영구 축적하는 초간단 플랫 위키 | 프로젝트가 커져서 1개 파일로는 지식 정리가 안 되는 분 |
 
 ---
 
