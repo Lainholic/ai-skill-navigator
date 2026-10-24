@@ -49,6 +49,7 @@ Beyond recommendations, we provide **battle-tested, zero-install skills** you ca
 
 * [**`adversarial-review`**](./skills/adversarial-review/): Forces the AI into an aggressive "Devil's Advocate / Red Team" persona to break self-confirmation bias. *(💡 Includes Pro Tip for cross-model verification using secondary API keys)*
 * [**`verification-before-completion`**](./skills/verification-before-completion/): Strictly forbids the agent from claiming "done/fixed" without running commands and showing verifiable terminal output.
+* [**`session-journal`**](./skills/session-journal/): Single-file (`DEV_JOURNAL.md`) context persistence across sessions without heavy database dependencies.
 
 👉 See the [**`skills/` Directory Guide**](./skills/README.md) for usage and self-bias warnings.
 
@@ -67,7 +68,8 @@ ai-skill-navigator/
     ├── README.md        # Global English Skills Guide
     ├── README.ko.md     # 한국어 스킬 팩 안내 및 주의사항
     ├── adversarial-review/
-    └── verification-before-completion/
+    ├── verification-before-completion/
+    └── session-journal/
 ```
 
 ---

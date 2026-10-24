@@ -14,6 +14,7 @@ Works natively with Claude Code, Cursor, Antigravity, GitHub Copilot, Windsurf, 
 | :--- | :--- | :--- |
 | [**`adversarial-review`**](./adversarial-review/) | Forces the AI into an aggressive "Devil's Advocate / Red Team" persona to rigorously attack its own code. | Anyone wanting to break self-confirmation bias. |
 | [**`verification-before-completion`**](./verification-before-completion/) | Prohibits the agent from claiming "done/fixed" without running commands and showing verifiable terminal output. | Anyone tired of AI hallucinating false success. |
+| [**`session-journal`**](./session-journal/) | Single-file (`DEV_JOURNAL.md`) context persistence across sessions without heavy database dependencies. | Anyone tired of AI amnesia across new chat sessions. |
 
 ---
 
