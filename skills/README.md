@@ -42,3 +42,15 @@ While self-adversarial mode is a huge leap forward, **true defect immunity comes
 ### How to apply:
 * If your primary driver is **Claude**, wire a lightweight script calling **OpenAI (GPT-4o)** or **DeepSeek** as the critic step.
 * Instructing a completely different model with *"You are an external hostile auditor; highlight only vulnerabilities"* catches edge-cases and structural blindspots no single model can spot alone.
+
+---
+
+## 🧹 [Maintenance Tip] Periodically Prune `DEV_JOURNAL.md`
+
+The `session-journal` skill appends entries incrementally after each completed milestone.
+
+* Over months of work, the log can become unnecessarily long, consuming extra context tokens.
+* **Once a month, do a quick manual prune:**
+  1. Archive or delete entries from tasks finished long ago.
+  2. Clean up contradictory past decisions if project requirements pivoted.
+* This light touch keeps the agent laser-focused on the freshest architectural context without confusion.
