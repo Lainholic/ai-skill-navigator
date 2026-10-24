@@ -43,6 +43,17 @@ The AI dynamically navigates the top trusted registries based on your workspace 
 
 ---
 
+## 🧰 Starter Skills Pack for Agents
+
+Beyond recommendations, we provide **battle-tested, zero-install skills** you can immediately copy into your agent directory:
+
+* [**`adversarial-review`**](./skills/adversarial-review/): Forces the AI into an aggressive "Devil's Advocate / Red Team" persona to break self-confirmation bias. *(💡 Includes Pro Tip for cross-model verification using secondary API keys)*
+* [**`verification-before-completion`**](./skills/verification-before-completion/): Strictly forbids the agent from claiming "done/fixed" without running commands and showing verifiable terminal output.
+
+👉 See the [**`skills/` Directory Guide**](./skills/README.md) for usage and self-bias warnings.
+
+---
+
 ## 📋 Repository Structure
 
 ```text
@@ -51,7 +62,12 @@ ai-skill-navigator/
 ├── README.md            # Global English Overview & Quick Start
 ├── README.ko.md         # 한국어 개요 및 사용 가이드
 ├── NAVIGATOR.md         # Global English AI Protocol
-└── NAVIGATOR.ko.md      # 한국어 전용 AI 실행 프로토콜
+├── NAVIGATOR.ko.md      # 한국어 전용 AI 실행 프로토콜
+└── skills/              # Zero-install Starter Skills Pack
+    ├── README.md        # Global English Skills Guide
+    ├── README.ko.md     # 한국어 스킬 팩 안내 및 주의사항
+    ├── adversarial-review/
+    └── verification-before-completion/
 ```
 
 ---

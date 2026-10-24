@@ -66,6 +66,17 @@ AI는 사용자의 직무와 프로젝트 스택에 맞춰 아래 공인 허브�
 
 ---
 
+## 🧰 뉴비 추천 엄선 스킬 팩 (Starter Skills Pack)
+
+추천뿐만 아니라, **지금 당장 복사해서 내 에이전트에 장착할 수 있는 알짜배기 실전 스킬 팩**을 제공합니다. (설치 불필요)
+
+* [**`adversarial-review`**](./skills/adversarial-review/): AI의 자기 긍정 편향을 깨는 1인 2역 악마의 변호인(레드팀) 자가 검증 스킬. *(💡 Pro Tip: 타 모델 API 키 연동 확장 가이드 포함)*
+* [**`verification-before-completion`**](./skills/verification-before-completion/): 실제 터미널 실행 증거 없이 "다 고쳤습니다"라고 구라치는 것을 원천 차단하는 행동 족쇄.
+
+👉 자세한 내용과 사용법은 [**`skills/` 디렉토리 README**](./skills/README.ko.md)를 확인하세요.
+
+---
+
 ## 📋 파일 구조 (File Structure)
 
 ```text
@@ -74,7 +85,12 @@ ai-skill-navigator/
 ├── README.md            # Global English Overview & Quick Start
 ├── README.ko.md         # 한국어 개요 및 사용 가이드
 ├── NAVIGATOR.md         # Global English AI Protocol
-└── NAVIGATOR.ko.md      # 한국어 전용 AI 실행 프로토콜
+├── NAVIGATOR.ko.md      # 한국어 전용 AI 실행 프로토콜
+└── skills/              # 복붙 1초 실전 엄선 스킬 팩
+    ├── README.ko.md     # 스킬 팩 가이드 (자기 편향 주의사항 & 타 API 연동 팁)
+    ├── README.md        # Global English Skills Guide
+    ├── adversarial-review/
+    └── verification-before-completion/
 ```
 
 ---
