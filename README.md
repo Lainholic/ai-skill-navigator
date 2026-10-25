@@ -36,6 +36,22 @@ skills/
 <a name="english"></a>
 # English Catalog
 
+## 🚀 1-Minute Quick Start (Where to Put & How to Run)
+
+| Editor / Agent | Where to drop the folder | Tested Status | Exact Invocation Example |
+| :--- | :--- | :---: | :--- |
+| **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | ✅ Verified | `claude -p "Use brand-guidelines to review this draft and strip out passive voice"` |
+| **Cursor / Windsurf** | `.cursor/rules/<skill-name>.md` | ✅ Verified | `@brand-guidelines audit this markdown document against our tone standards` |
+| **Antigravity / Codex** | `.agents/skills/<skill-name>/SKILL.md` | ✅ Verified | `"Follow brand-guidelines to refine the tone without altering core facts"` |
+
+### 🛡️ Built-in Guardrail Standards (Bilingual Parity)
+All 40 skills adhere to our standard safety and execution principles across both English and Korean versions:
+1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
+2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
+3. **Fact & Constraint Integrity**: Retains original facts, numeric limits, and architectural bounds without unauthorized creative alterations.
+
+---
+
 ### How to Use
 1. Select a skill from `skills/en/<category>/<skill-name>/SKILL.md`.
 2. Copy its contents into your system prompt, or place the skill directory into your AI workspace.
