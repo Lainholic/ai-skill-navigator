@@ -1,5 +1,9 @@
 # AI Skill Navigator
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Skills](https://img.shields.io/badge/Skills-40%20Bilingual-2ea44f.svg)](#)
+[![Compatibility](https://img.shields.io/badge/Compatible-Claude%20Code%20%7C%20Cursor%20%7C%20Antigravity-orange.svg)](#)
+
 [English](#english) | [한국어](#한국어)
 
 A collection of 40 AI agent skills (`SKILL.md`) available in both English and Korean.  
