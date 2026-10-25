@@ -1,7 +1,7 @@
 # AI Skill Navigator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/Skills-40%20Bilingual-2ea44f.svg)](#)
+[![Open Source](https://img.shields.io/badge/Open%20Source-Curated%20Skills-2ea44f.svg)](#)
 [![Compatibility](https://img.shields.io/badge/Compatible-Claude%20Code%20%7C%20Cursor%20%7C%20Antigravity-orange.svg)](#)
 
 [English](#english) | [한국어](#한국어)
@@ -17,13 +17,13 @@ Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
 
 ```
 skills/
-├── ko/                     # 한국어 전용 (40종)
+├── ko/                     # 한국어 전용 스킬
 │   ├── 00_core_official/   # 공식 핵심 도구 (8종)
 │   ├── 01_automation/      # 업무 자동화 (8종)
 │   ├── 02_utility/         # 실무 유틸리티 (8종)
 │   ├── 03_gamedev/         # 게임 및 세계관 (8종)
 │   └── 04_creative_arts/   # 창작 및 비주얼 (8종)
-└── en/                     # English Version (40 skills)
+└── en/                     # English Version
     ├── 00_core_official/   # Core Tools (8 skills)
     ├── 01_automation/      # Daily Automation (8 skills)
     ├── 02_utility/         # Practical Utilities (8 skills)
