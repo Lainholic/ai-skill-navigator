@@ -1,0 +1,12 @@
+# Internal pipeline, raw sources, and audit logs
+_work/
+_raw/
+_catalog/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local secrets & environment
+.secrets/
+*.env

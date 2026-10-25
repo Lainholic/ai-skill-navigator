@@ -1,125 +1,210 @@
-# 🧭 AI Skill Navigator
+# AI Skill Navigator
 
-> **"Feed this single file to any AI, and it will analyze your role and workspace to recommend the best Skills & MCP tools for your project."**  
-> *"이 파일 하나를 AI에게 건네주면, 당신의 직무를 분석해 가장 필요한 스킬과 MCP 도구를 알아서 찾아 추천해 줍니다."*
+[English](#english) | [한국어](#한국어)
 
-[English](./README.md) | [한국어](./README.ko.md)
+A collection of 40 AI agent skills (`SKILL.md`) available in both English and Korean.  
+Designed to provide ready-to-use drafts directly, saving you time on repetitive setup and manual drafting.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Lainholic/ai-skill-navigator/pulls)
-
----
-
-## ⚡ 10-Second Quick Start
-
-No complex setup or CLI installation required.
-
-1. Copy the content of [`NAVIGATOR.md`](./NAVIGATOR.md) (or [`NAVIGATOR.ko.md`](./NAVIGATOR.ko.md) for Korean).
-2. Paste it into your AI assistant (ChatGPT, Claude, Cursor, Antigravity, GitHub Copilot, Windsurf, etc.) and say:
-   > 👉 **"Read this document and recommend the best tools/skills for my job and current project."**
+Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
 
 ---
 
-## 💡 Why AI Skill Navigator?
+## Directory Structure
 
-Hundreds of MCP (Model Context Protocol) servers and AI skills are released every week. Yet most builders and non-technical founders struggle with a simple question:  
-**"Which tool should I actually use for my specific problem right now?"**
-
-- Traditional **Awesome lists** force humans to manually read through endless links.
-- Static **rules files** (`.cursorrules`) are mostly limited to coding style guidelines.
-
-**AI Skill Navigator** turns your AI agent into an **autonomous tool consultant**. Instead of you researching tools, **your AI proactively steps forward and asks: "Here are the top tools for your context — want me to rank or configure any of them for you?"**
-
----
-
-## 🧭 Curated Hubs Explored by AI
-
-The AI dynamically navigates the top trusted registries based on your workspace context:
-
-* 🌐 **[Model Context Protocol Registry](https://github.com/modelcontextprotocol/servers)**: Anthropic official reference servers (Filesystem, Git, Memory, Postgres)
-* 📦 **[Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers)**: Community-driven catalog of battle-tested open-source MCP tools
-* ⚡ **[PulseMCP](https://www.pulsemcp.com/) / [Glama](https://glama.ai/mcp/servers)**: Real-time rankings & one-click configuration specs
-* 🇰🇷 **[SkillBook (스킬북)](https://www.getskillbook.com/)**: Specialized for Korean business workflows, planning, and copywriting
-
----
-
-## 🧰 Starter Skills Pack for Agents
-
-Beyond recommendations, we provide **battle-tested, zero-install skills** you can immediately copy into your agent directory:
-
-* [**`adversarial-review`**](./skills/adversarial-review/): Forces the AI into an aggressive "Devil's Advocate / Red Team" persona to break self-confirmation bias. *(💡 Includes Pro Tip for cross-model verification using secondary API keys)*
-* [**`verification-before-completion`**](./skills/verification-before-completion/): Strictly forbids the agent from claiming "done/fixed" without running commands and showing verifiable terminal output.
-* [**`session-journal`**](./skills/session-journal/): Single-file (`DEV_JOURNAL.md`) context persistence across sessions without heavy database dependencies.
-* [**`lite-wiki`**](./skills/lite-wiki/): Ultra-light flat wiki in a single `wiki/` folder with `INDEX.md` and topic files for long-term project knowledge.
-
-👉 See the [**`skills/` Directory Guide**](./skills/README.md) for usage and self-bias warnings.
-
----
-
-## 📋 Repository Structure
-
-```text
-ai-skill-navigator/
-├── LICENSE              # MIT License
-├── README.md            # Global English Overview & Quick Start
-├── README.ko.md         # 한국어 개요 및 사용 가이드
-├── NAVIGATOR.md         # Global English AI Protocol
-├── NAVIGATOR.ko.md      # 한국어 전용 AI 실행 프로토콜
-└── skills/              # Zero-install Starter Skills Pack
-    ├── README.md        # Global English Skills Guide
-    ├── README.ko.md     # 한국어 스킬 팩 안내 및 주의사항
-    ├── adversarial-review/
-    ├── verification-before-completion/
-    ├── session-journal/
-    └── lite-wiki/
+```
+skills/
+├── ko/                     # 한국어 전용 (40종)
+│   ├── 00_core_official/   # 공식 핵심 도구 (8종)
+│   ├── 01_automation/      # 업무 자동화 (8종)
+│   ├── 02_utility/         # 실무 유틸리티 (8종)
+│   ├── 03_gamedev/         # 게임 및 세계관 (8종)
+│   └── 04_creative_arts/   # 창작 및 비주얼 (8종)
+└── en/                     # English Version (40 skills)
+    ├── 00_core_official/   # Core Tools (8 skills)
+    ├── 01_automation/      # Daily Automation (8 skills)
+    ├── 02_utility/         # Practical Utilities (8 skills)
+    ├── 03_gamedev/         # Game Dev and Worldbuilding (8 skills)
+    └── 04_creative_arts/   # Creative and Visual (8 skills)
 ```
 
 ---
 
-## 🔎 Sample Interaction / 실제 사용 예시
+<a name="english"></a>
+# English Catalog
 
-This project is intentionally zero-install: give the `NAVIGATOR.md` content to an AI and ask it to analyze your role and project. Below is a short, realistic sample session you can paste into any LLM to show users what to expect.
+### How to Use
+1. Select a skill from `skills/en/<category>/<skill-name>/SKILL.md`.
+2. Copy its contents into your system prompt, or place the skill directory into your AI workspace.
+3. The skill provides an immediate working draft without extra installation steps.
+
+### 00. Official Core Tools (Anthropic Core Reference)
+> Essential document and layout creation tools streamlined for direct productivity. Saves you time.
+
+| # | Skill Name | Identifier | Link |
+| :-: | :--- | :--- | :--- |
+| 1 | **Academy Guide** | `academy-guide` | [SKILL.md](skills/en/00_core_official/academy-guide/SKILL.md) |
+| 2 | **Brand Voice Compass** | `brand-guidelines` | [SKILL.md](skills/en/00_core_official/brand-guidelines/SKILL.md) |
+| 3 | **Canvas Design** | `canvas-design` | [SKILL.md](skills/en/00_core_official/canvas-design/SKILL.md) |
+| 4 | **Collaborative Drafting Partner** | `doc-coauthoring` | [SKILL.md](skills/en/00_core_official/doc-coauthoring/SKILL.md) |
+| 5 | **Internal Communications Formatter** | `internal-comms` | [SKILL.md](skills/en/00_core_official/internal-comms/SKILL.md) |
+| 6 | **Presentation Deck Architect** | `pptx` | [SKILL.md](skills/en/00_core_official/pptx/SKILL.md) |
+| 7 | **Skill Creator** | `skill-creator` | [SKILL.md](skills/en/00_core_official/skill-creator/SKILL.md) |
+| 8 | **Theme Factory** | `theme-factory` | [SKILL.md](skills/en/00_core_official/theme-factory/SKILL.md) |
+
+### 01. Daily Automation (Productivity and Cleanup)
+> Automates web article cleanup, browser tab sorting, and task structuring to save you time.
+
+| # | Skill Name | Identifier | Link |
+| :-: | :--- | :--- | :--- |
+| 1 | **Social Carousel Copywriter** | `landing-carousel-copy` | [SKILL.md](skills/en/01_automation/landing-carousel-copy/SKILL.md) |
+| 2 | **Real Estate Concept Copywriter** | `real-estate-copywriter` | [SKILL.md](skills/en/01_automation/real-estate-copywriter/SKILL.md) |
+| 3 | **UI Spec Verifier** | `spec-diff-checker` | [SKILL.md](skills/en/01_automation/spec-diff-checker/SKILL.md) |
+| 4 | **Browser Tab Triage Organizer** | `tab-session-organizer` | [SKILL.md](skills/en/01_automation/tab-session-organizer/SKILL.md) |
+| 5 | **Daily Task Decomposer** | `task-reminder-parser` | [SKILL.md](skills/en/01_automation/task-reminder-parser/SKILL.md) |
+| 6 | **YouTube Metadata Packager** | `video-metadata-packager` | [SKILL.md](skills/en/01_automation/video-metadata-packager/SKILL.md) |
+| 7 | **YouTube Transcript Summarizer** | `video-transcript-digest` | [SKILL.md](skills/en/01_automation/video-transcript-digest/SKILL.md) |
+| 8 | **Web Content Sanitizer** | `web-article-cleaner` | [SKILL.md](skills/en/01_automation/web-article-cleaner/SKILL.md) |
+
+### 02. Practical Utilities (Communication and Text)
+> Handy utilities for drafting emails, distilling meeting action items, and multi-channel formatting to save you time.
+
+| # | Skill Name | Identifier | Link |
+| :-: | :--- | :--- | :--- |
+| 1 | **Business Email Formatter** | `business-email-formatter` | [SKILL.md](skills/en/02_utility/business-email-formatter/SKILL.md) |
+| 2 | **Inbox Triage Assistant** | `inbox-response-drafter` | [SKILL.md](skills/en/02_utility/inbox-response-drafter/SKILL.md) |
+| 3 | **Messenger Layout Formatter** | `messenger-markdown-formatter` | [SKILL.md](skills/en/02_utility/messenger-markdown-formatter/SKILL.md) |
+| 4 | **Content Distribution Adapter** | `multichannel-content-adapter` | [SKILL.md](skills/en/02_utility/multichannel-content-adapter/SKILL.md) |
+| 5 | **Short-Form Video Script Generator** | `shortform-script-builder` | [SKILL.md](skills/en/02_utility/shortform-script-builder/SKILL.md) |
+| 6 | **Prompt Quality Audit Checklist** | `skill-validation-checklist` | [SKILL.md](skills/en/02_utility/skill-validation-checklist/SKILL.md) |
+| 7 | **Social Thread Splitter** | `social-thread-formatter` | [SKILL.md](skills/en/02_utility/social-thread-formatter/SKILL.md) |
+| 8 | **Thread Noise Reducer** | `thread-meeting-summarizer` | [SKILL.md](skills/en/02_utility/thread-meeting-summarizer/SKILL.md) |
+
+### 03. Game Dev and Worldbuilding (Narrative and Mechanics)
+> Assists creators with game balance, encounter outlines, quest structures, and dialogue formatting to save you time.
+
+| # | Skill Name | Identifier | Link |
+| :-: | :--- | :--- | :--- |
+| 1 | **Board Game Rulebook & Component Architect** | `boardgame-rule-spec` | [SKILL.md](skills/en/03_gamedev/boardgame-rule-spec/SKILL.md) |
+| 2 | **Card Game Mechanic & Deck Architect** | `card-deck-synergy` | [SKILL.md](skills/en/03_gamedev/card-deck-synergy/SKILL.md) |
+| 3 | **Subculture Character Voice Line Generator** | `character-lore-codex` | [SKILL.md](skills/en/03_gamedev/character-lore-codex/SKILL.md) |
+| 4 | **Game Numerics** | `game-balance-calculator` | [SKILL.md](skills/en/03_gamedev/game-balance-calculator/SKILL.md) |
+| 5 | **Steam Review Analyzer** | `game-review-digest` | [SKILL.md](skills/en/03_gamedev/game-review-digest/SKILL.md) |
+| 6 | **Text TRPG & Interactive Fiction Engine** | `interactive-fiction-helper` | [SKILL.md](skills/en/03_gamedev/interactive-fiction-helper/SKILL.md) |
+| 7 | **RPG Maker XP Event Builder** | `rpg-dialogue-formatter` | [SKILL.md](skills/en/03_gamedev/rpg-dialogue-formatter/SKILL.md) |
+| 8 | **DnD Oracle** | `ttrpg-encounter-helper` | [SKILL.md](skills/en/03_gamedev/ttrpg-encounter-helper/SKILL.md) |
+
+### 04. Creative and Visual Content (Design and Media)
+> Utilities for SVG icons, moodboard palettes, visual prompt optimization, and sensory lexicons to save you time.
+
+| # | Skill Name | Identifier | Link |
+| :-: | :--- | :--- | :--- |
+| 1 | **Open Museum MCP** | `classic-art-palette-curator` | [SKILL.md](skills/en/04_creative_arts/classic-art-palette-curator/SKILL.md) |
+| 2 | **Aesthetics Wiki Director** | `concept-moodboard-builder` | [SKILL.md](skills/en/04_creative_arts/concept-moodboard-builder/SKILL.md) |
+| 3 | **SVG Vector Generator** | `inline-svg-generator` | [SKILL.md](skills/en/04_creative_arts/inline-svg-generator/SKILL.md) |
+| 4 | **Lyric Melody Arranger** | `lyric-melody-harmonizer` | [SKILL.md](skills/en/04_creative_arts/lyric-melody-harmonizer/SKILL.md) |
+| 5 | **Viral Meme Generator** | `meme-copy-builder` | [SKILL.md](skills/en/04_creative_arts/meme-copy-builder/SKILL.md) |
+| 6 | **Tarot Story Coach** | `narrative-plot-oracle` | [SKILL.md](skills/en/04_creative_arts/narrative-plot-oracle/SKILL.md) |
+| 7 | **Sensory Scene Describer** | `sensory-scene-describer` | [SKILL.md](skills/en/04_creative_arts/sensory-scene-describer/SKILL.md) |
+| 8 | **PromptPilot MCP Server** | `visual-prompt-optimizer` | [SKILL.md](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
 
 ---
 
-### English (copy-paste into your AI)
+<a name="한국어"></a>
+# 한국어 카탈로그
 
-User: "I will paste the AI Skill Navigator doc now. After you read it, please ask any clarifying questions about my role and current project, then recommend the top 3 tools or MCP servers I should consider, explain why each fits, and suggest one next action I can take to try the top choice. My role: Product Manager at a small startup building a web app for scheduling and notifications. Tech stack: React frontend, Node.js backend, PostgreSQL. Priority: improve contextual memory and retrieval for user schedules."
+### 사용 방법
+1. 필요한 도구를 `skills/ko/<카테고리>/<스킬이름>/SKILL.md`에서 확인합니다.
+2. 시스템 프롬프트 또는 에이전트 지침 폴더에 복사해 넣습니다.
+3. 별도 설치 없이 즉시 작동하여 작업 시간을 아껴줍니다.
 
-AI (example reply):
-1) Clarifying question: "Do you need ephemeral session memory (short-term) or long-term user history retrieval? How large are the datasets (MBs, GBs)?"
+### 00. 공식 핵심 도구 (Anthropic Core Reference)
+> 불필요한 기술 설정을 걷어내고 실무 문서 작성과 서식 설계를 돕는 핵심 스킬 모음입니다. 시간을 아껴줍니다.
 
-2) Top 3 recommended tools/servers:
-- Memory-MCP (example server): Reason: optimized for semantic vector store + low-latency lookup; fits React/Node with mild infra requirements. Next action: provision a dev instance and load a small sample of schedule logs.
-- Postgres-MCP adapter: Reason: leverages your existing Postgres for reliable persistence and transactional guarantees. Next action: try indexing a small user history table and run sample retrieval queries.
-- FileSystem-MCP with chunked embeddings: Reason: easy zero-cost PoC using filesystem; good to validate concept before moving to hosted vector DB. Next action: run a local proof-of-concept with 100 recent events.
+| 번호 | 스킬명 | 식별자 | 링크 |
+| :-: | :--- | :--- | :--- |
+| 1 | **소크라테스식 개념 튜터** | `academy-guide` | [SKILL.md](skills/ko/00_core_official/academy-guide/SKILL.md) |
+| 2 | **브랜드 보이스 가이드** | `brand-guidelines` | [SKILL.md](skills/ko/00_core_official/brand-guidelines/SKILL.md) |
+| 3 | **SNS 썸네일 & 카피 기획기** | `canvas-design` | [SKILL.md](skills/ko/00_core_official/canvas-design/SKILL.md) |
+| 4 | **문서 공동 작성기** | `doc-coauthoring` | [SKILL.md](skills/ko/00_core_official/doc-coauthoring/SKILL.md) |
+| 5 | **사내 커뮤니케이션 작성기** | `internal-comms` | [SKILL.md](skills/ko/00_core_official/internal-comms/SKILL.md) |
+| 6 | **발표 슬라이드 기획기** | `pptx` | [SKILL.md](skills/ko/00_core_official/pptx/SKILL.md) |
+| 7 | **AI 스킬 생성기** | `skill-creator` | [SKILL.md](skills/ko/00_core_official/skill-creator/SKILL.md) |
+| 8 | **컬러 팔레트 & 무드보드 생성기** | `theme-factory` | [SKILL.md](skills/ko/00_core_official/theme-factory/SKILL.md) |
 
-3) Short config hint for top choice (Memory-MCP): include embedding model choice, chunk size, and an initial relevance threshold (e.g., cosine > 0.75). Provide sample pseudo-config.
+### 01. 업무 자동화 (Daily Automation)
+> 반복되는 웹 글 정리, 탭 분류, 일정 정리를 보조하여 수작업 시간을 아껴줍니다.
 
-This sample demonstrates the expected shape of the AI’s output: clarifying questions, ranked recommendations, concise reasons, and an immediately actionable next step.
+| 번호 | 스킬명 | 식별자 | 링크 |
+| :-: | :--- | :--- | :--- |
+| 1 | **SNS 카드뉴스 카피라이터** | `landing-carousel-copy` | [SKILL.md](skills/ko/01_automation/landing-carousel-copy/SKILL.md) |
+| 2 | **공간 소개 브로슈어 작성기** | `real-estate-copywriter` | [SKILL.md](skills/ko/01_automation/real-estate-copywriter/SKILL.md) |
+| 3 | **웹 기획서 대조 검수기** | `spec-diff-checker` | [SKILL.md](skills/ko/01_automation/spec-diff-checker/SKILL.md) |
+| 4 | **브라우저 탭 분류 정리기** | `tab-session-organizer` | [SKILL.md](skills/ko/01_automation/tab-session-organizer/SKILL.md) |
+| 5 | **업무 할 일 변환기** | `task-reminder-parser` | [SKILL.md](skills/ko/01_automation/task-reminder-parser/SKILL.md) |
+| 6 | **유튜브 카피 패키저** | `video-metadata-packager` | [SKILL.md](skills/ko/01_automation/video-metadata-packager/SKILL.md) |
+| 7 | **유튜브 핵심 요약기** | `video-transcript-digest` | [SKILL.md](skills/ko/01_automation/video-transcript-digest/SKILL.md) |
+| 8 | **웹페이지 본문 정제기** | `web-article-cleaner` | [SKILL.md](skills/ko/01_automation/web-article-cleaner/SKILL.md) |
+
+### 02. 실무 유틸리티 (Everyday Utilities)
+> 비즈니스 이메일, 회의록 정리, SNS 포맷 변환 등 일상 업무의 초안 작성 시간을 아껴줍니다.
+
+| 번호 | 스킬명 | 식별자 | 링크 |
+| :-: | :--- | :--- | :--- |
+| 1 | **비즈니스 메일 변환기** | `business-email-formatter` | [SKILL.md](skills/ko/02_utility/business-email-formatter/SKILL.md) |
+| 2 | **업무 메일 분류기** | `inbox-response-drafter` | [SKILL.md](skills/ko/02_utility/inbox-response-drafter/SKILL.md) |
+| 3 | **메신저 가독성 포맷터** | `messenger-markdown-formatter` | [SKILL.md](skills/ko/02_utility/messenger-markdown-formatter/SKILL.md) |
+| 4 | **멀티채널 콘텐츠 변환기** | `multichannel-content-adapter` | [SKILL.md](skills/ko/02_utility/multichannel-content-adapter/SKILL.md) |
+| 5 | **숏폼 영상 대본 구성기** | `shortform-script-builder` | [SKILL.md](skills/ko/02_utility/shortform-script-builder/SKILL.md) |
+| 6 | **프롬프트 검수 체크리스트** | `skill-validation-checklist` | [SKILL.md](skills/ko/02_utility/skill-validation-checklist/SKILL.md) |
+| 7 | **소셜 스레드 분할기** | `social-thread-formatter` | [SKILL.md](skills/ko/02_utility/social-thread-formatter/SKILL.md) |
+| 8 | **업무 스레드 및 회의록 정리기** | `thread-meeting-summarizer` | [SKILL.md](skills/ko/02_utility/thread-meeting-summarizer/SKILL.md) |
+
+### 03. 게임 및 세계관 (Game Dev and Worldbuilding)
+> TRPG 룰, 수치 밸런스, 퀘스트 구조화 등 창작자의 기초 설계 시간을 아껴줍니다.
+
+| 번호 | 스킬명 | 식별자 | 링크 |
+| :-: | :--- | :--- | :--- |
+| 1 | **보드게임 룰북 및 명세서 정리** | `boardgame-rule-spec` | [SKILL.md](skills/ko/03_gamedev/boardgame-rule-spec/SKILL.md) |
+| 2 | **카드게임 기믹 & 시너지 덱메이커** | `card-deck-synergy` | [SKILL.md](skills/ko/03_gamedev/card-deck-synergy/SKILL.md) |
+| 3 | **서브컬처 캐릭터 보이스 & 대사 티키타카 생성기** | `character-lore-codex` | [SKILL.md](skills/ko/03_gamedev/character-lore-codex/SKILL.md) |
+| 4 | **가챠 확률 및 성장 밸런스 설계기** | `game-balance-calculator` | [SKILL.md](skills/ko/03_gamedev/game-balance-calculator/SKILL.md) |
+| 5 | **스팀 리뷰 분석 및 벤치마킹 추출기** | `game-review-digest` | [SKILL.md](skills/ko/03_gamedev/game-review-digest/SKILL.md) |
+| 6 | **텍스트 TRPG 시나리오 보조** | `interactive-fiction-helper` | [SKILL.md](skills/ko/03_gamedev/interactive-fiction-helper/SKILL.md) |
+| 7 | **RPG 메이커 퀘스트 이벤트 생성기** | `rpg-dialogue-formatter` | [SKILL.md](skills/ko/03_gamedev/rpg-dialogue-formatter/SKILL.md) |
+| 8 | **즉흥 TRPG 인카운터 생성기** | `ttrpg-encounter-helper` | [SKILL.md](skills/ko/03_gamedev/ttrpg-encounter-helper/SKILL.md) |
+
+### 04. 창작 및 비주얼 (Creative and Visual Content)
+> SVG 아이콘, 무드보드 배색, 프롬프트 최적화 등 시각 콘텐츠 제작의 고민 시간을 아껴줍니다.
+
+| 번호 | 스킬명 | 식별자 | 링크 |
+| :-: | :--- | :--- | :--- |
+| 1 | **명화 배색 및 구도 큐레이터** | `classic-art-palette-curator` | [SKILL.md](skills/ko/04_creative_arts/classic-art-palette-curator/SKILL.md) |
+| 2 | **시각 컨셉 무드보드 생성기** | `concept-moodboard-builder` | [SKILL.md](skills/ko/04_creative_arts/concept-moodboard-builder/SKILL.md) |
+| 3 | **인라인 SVG 벡터 생성기** | `inline-svg-generator` | [SKILL.md](skills/ko/04_creative_arts/inline-svg-generator/SKILL.md) |
+| 4 | **가사 및 코드 진행 가이드** | `lyric-melody-harmonizer` | [SKILL.md](skills/ko/04_creative_arts/lyric-melody-harmonizer/SKILL.md) |
+| 5 | **밈 포맷 카피 빌더** | `meme-copy-builder` | [SKILL.md](skills/ko/04_creative_arts/meme-copy-builder/SKILL.md) |
+| 6 | **플롯 전개 타로 가이드** | `narrative-plot-oracle` | [SKILL.md](skills/ko/04_creative_arts/narrative-plot-oracle/SKILL.md) |
+| 7 | **감각적 공간 묘사 가이드** | `sensory-scene-describer` | [SKILL.md](skills/ko/04_creative_arts/sensory-scene-describer/SKILL.md) |
+| 8 | **영문 비주얼 프롬프트 빌더** | `visual-prompt-optimizer` | [SKILL.md](skills/ko/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
 
 ---
 
-### 한국어 (NAVIGATOR.ko.md 붙여넣기 용 예시)
+## Acknowledgements
 
-사용자: "이제 NAVIGATOR 문서를 붙여넣습니다. 읽은 뒤 제 역할과 현재 프로젝트에 대해 질문을 하고, 상위 3개 도구 또는 MCP 서버를 추천해 주세요. 각각이 적합한 이유를 설명하고, 최우선 선택을 시도해볼 수 있는 한 가지 실행 가능한 다음 단계를 제안해 주세요. 제 역할: 소규모 스타트업의 프로덕트 매니저(웹앱: 스케줄/알림). 기술 스택: React, Node.js, PostgreSQL. 우선���위: 사용자 일정에 대한 문맥 기억 및 검색 개선."
-
-AI(예시 응답):
-1) 질문: "단기(세션) 메모리와 장기(사용자 히스토리) 중 어느 것이 더 중요합니까? 데이터 규모는 대략 어느 정도인가요 (MB/GB)?"
-
-2) 추천 상위 3개:
-- Memory-MCP: 이유: 의미 기반 벡터 저장소 + 저지연 조회에 최적화되어 있어 React/Node 기반 앱에 적합. 다음 단계: 개발 인스턴스를 띄우고 샘플 스케줄 로그를 적재해보세요.
-- Postgres-MCP 어댑터: 이유: 기존 PostgreSQL을 활용해 일관성 있는 영속성 보장. 다음 단계: 소규모 사용자 기록 테이블을 색인화하고 검색 쿼리를 실행해 보세요.
-- FileSystem-MCP(청크 임베딩): 이유: 제로-설치 PoC로 비용 없이 개념 검증 가능. 다음 단계: 최근 이벤트 100건으로 로컬 PoC 실행.
-
-3) 최우선 도구(Memory-MCP) 간단 설정 힌트: 임베딩 모델, 청크 사이즈, relevance threshold(cosine > 0.75) 등을 포함한 샘플 의사설정.
+- Agent Skills specification by Anthropic (agentskills.io)
+- Open-source inspirations from community collections:
+  - punkpeye/awesome-mcp-servers
+  - f/awesome-chatgpt-prompts
+  - openai/openai-cookbook
 
 ---
 
-## 🤝 Contributing
+## Trademark Disclaimer
 
-Contributions are welcome! If you know of a great skill hub, new MCP registry, or workflow scenario, feel free to open an Issue or submit a Pull Request.
+All product names, logos, brands, and registered trademarks mentioned or referenced in this project are the property of their respective owners. Mention of any specific commercial platform, software, or brand is strictly for identification, compatibility, and educational reference purposes only, and does not imply any affiliation, sponsorship, or endorsement.
 
-## 📄 License
+---
 
-This project is licensed under the [MIT License](./LICENSE) — free to use, modify, and distribute.
+## License
+
+Released under the MIT License.
