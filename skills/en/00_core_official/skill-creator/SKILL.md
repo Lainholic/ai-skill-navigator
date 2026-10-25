@@ -26,6 +26,11 @@ Converts raw user intent into production-grade SKILL.md specifications without r
 
 ## Step 2: Generated Skill Specification (SKILL.md)
 [Complete, standardized SKILL.md specification adhering to design standards]
+
+### Output Contract (Completion Checklist)
+- **What changed**: [Core files or architectural components modified]
+- **What was NOT tested**: [Specific edge cases, manual verifications, or external dependencies]
+- **Assumptions**: [Underlying assumptions and operating bounds]
 ```
 
 ---

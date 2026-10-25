@@ -2,9 +2,9 @@
 name: skill-validation-checklist
 description: Audits prompts across four operational criteria, assigns an A–F grade, and provides an immediate revision. Saves you time.
 ---
-# Prompt Quality Audit Checklist — Four-Pillar Validation and Remediation Engine
+# Prompt Quality Audit Checklist — Five-Pillar Validation and Remediation Engine
 
-Evaluates prompts and SKILL.md instructions across role definition, few-shot examples, ambiguity, and output constraints. Identifies operational edge cases and delivers a calibrated, drop-in replacement draft.
+Evaluates prompts and SKILL.md instructions across role definition, few-shot examples, ambiguity, output constraints, and explicit unchecked scope (what was NOT tested). Identifies operational edge cases and delivers a calibrated, drop-in replacement draft.
 
 ---
 
@@ -29,6 +29,7 @@ Evaluates prompts and SKILL.md instructions across role definition, few-shot exa
 | 2. Few-Shot Examples | [A-F] | [Presence or absence of input/output pairs] |
 | 3. Ambiguity Level | [A-F] | [Vague words or undefined edge conditions found] |
 | 4. Output Constraints | [A-F] | [Format limits, delimiters, and length rules] |
+| 5. Unchecked Scope Checklist | [A-F] | [Presence of explicit 'What was NOT tested' and assumptions] |
 
 ### Recommended Rewrite
 ```[format]
