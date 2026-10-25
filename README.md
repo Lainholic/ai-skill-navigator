@@ -49,6 +49,9 @@ All 40 skills adhere to our standard safety and execution principles across both
 1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
 2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
 3. **Fact & Constraint Integrity**: Retains original facts, numeric limits, and architectural bounds without unauthorized creative alterations.
+4. **Explicit Output Checklist (미검증 범위 명시)**: Requires completions to state what changed, what was NOT tested, and key assumptions to prevent silent edge-case skips.
+
+See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 
 ---
 
