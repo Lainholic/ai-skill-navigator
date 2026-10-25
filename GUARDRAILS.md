@@ -18,3 +18,6 @@
 - **Local Isolation**: Scripts and builds must run locally within sandbox constraints.
 - **Explicit Push Gate**: Local Git commits are encouraged for rollback checkpoints, but remote `git push` or external uploads are strictly prohibited without a separate, explicit user command.
 - **Documentation Preservation**: Existing comments, docstrings, and architectural invariants must remain intact during edits unless explicitly targeted for modification.
+
+## 4. Explicit Output Checklist (미검증 범위 명시 원칙)
+- **What Was NOT Tested**: The agent's completion report must explicitly state what was NOT tested, along with any key assumptions. Silently claiming a premature "done" or skipping edge-case validation is strictly prohibited.
