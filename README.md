@@ -36,15 +36,15 @@ skills/
 <a name="english"></a>
 # English Catalog
 
-## 🚀 1-Minute Quick Start (Where to Put & How to Run)
+## 1-Minute Quick Start (Where to Put & How to Run)
 
 | Editor / Agent | Where to drop the folder | Tested Status | Exact Invocation Example |
 | :--- | :--- | :---: | :--- |
-| **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | ✅ Verified | `claude -p "Use brand-guidelines to review this draft and strip out passive voice"` |
-| **Cursor / Windsurf** | `.cursor/rules/<skill-name>.md` | ✅ Verified | `@brand-guidelines audit this markdown document against our tone standards` |
-| **Antigravity / Codex** | `.agents/skills/<skill-name>/SKILL.md` | ✅ Verified | `"Follow brand-guidelines to refine the tone without altering core facts"` |
+| **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | Verified | `claude -p "Use brand-guidelines to review this draft and strip out passive voice"` |
+| **Cursor / Windsurf** | `.cursor/rules/<skill-name>.md` | Verified | `@brand-guidelines audit this markdown document against our tone standards` |
+| **Antigravity / Codex** | `.agents/skills/<skill-name>/SKILL.md` | Verified | `"Follow brand-guidelines to refine the tone without altering core facts"` |
 
-### 🛡️ Built-in Guardrail Standards (Bilingual Parity)
+### Built-in Guardrail Standards (Bilingual Parity)
 All 40 skills adhere to our standard safety and execution principles across both English and Korean versions:
 1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
 2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
@@ -130,14 +130,14 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 | 7 | **Sensory Scene Describer** | `sensory-scene-describer` | [SKILL.md](skills/en/04_creative_arts/sensory-scene-describer/SKILL.md) |
 | 8 | **PromptPilot MCP Server** | `visual-prompt-optimizer` | [SKILL.md](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
 
-### 🌐 Next Steps: Explore the Wider Ecosystem
+### Next Steps: Explore the Wider Ecosystem
 
 > **"Comfortable with these 40 starter skills? You are ready to explore the broader ecosystem."**
 
-- 📦 **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**: The community-driven mega-catalog of Model Context Protocol servers worldwide.
-- 🌐 **[Anthropic MCP Registry](https://github.com/modelcontextprotocol/servers)**: Official reference implementations for filesystems, Git, database connectors, and memory.
-- ⚡ **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**: Real-time popular server rankings and integration directory.
-- 🇰🇷 **[SkillBook (스킬북)](https://www.getskillbook.com/)** *(by [@BBBang9900](https://twitter.com/BBBang9900))*: Curated Korean AI workflows, productivity tools, and practical prompts for creators and planners.
+- **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**: The community-driven mega-catalog of Model Context Protocol servers worldwide.
+- **[Anthropic MCP Registry](https://github.com/modelcontextprotocol/servers)**: Official reference implementations for filesystems, Git, database connectors, and memory.
+- **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**: Real-time popular server rankings and integration directory.
+- **[SkillBook (스킬북)](https://www.getskillbook.com/)** *(by [@BBBang9900](https://twitter.com/BBBang9900))*: Curated Korean AI workflows, productivity tools, and practical prompts for creators and planners.
 
 ---
 
@@ -221,14 +221,14 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 
 ---
 
-### 🌐 다음 단계: 더 넓은 AI 도구 생태계로 확장하기
+### 다음 단계: 더 넓은 AI 도구 생태계로 확장하기
 
 > **"이 40개 기본 스킬셋에 익숙해지셨나요? 이제 더 방대한 상위 도구 생태계로 나아갈 준비가 되었습니다."**
 
-- 🇰🇷 **[스킬북 (SkillBook)](https://www.getskillbook.com/)** *(by 꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900))*: 직장인, 기획자, 취업준비생, 1인 창업가를 위한 국내 최고의 실무 AI 도구·프롬프트 큐레이션 플랫폼입니다.
-- 📦 **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**: 전 세계 수많은 개발자들이 기여하고 검증한 Model Context Protocol(MCP) 서버들의 메가 아카이브입니다.
-- 🌐 **[Anthropic MCP 공식 레퍼런스](https://github.com/modelcontextprotocol/servers)**: Anthropic이 직접 관리하는 파일시스템, Git, 메모리, SQLite 등 공식 표준 MCP 서버 모음입니다.
-- ⚡ **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**: 실시간 인기 MCP 도구 순위 및 웹 스펙을 한눈에 비교할 수 있는 글로벌 디렉터리입니다.
+- **[스킬북 (SkillBook)](https://www.getskillbook.com/)** *(by 꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900))*: 직장인, 기획자, 취업준비생, 1인 창업가를 위한 국내 최고의 실무 AI 도구·프롬프트 큐레이션 플랫폼입니다.
+- **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**: 전 세계 수많은 개발자들이 기여하고 검증한 Model Context Protocol(MCP) 서버들의 메가 아카이브입니다.
+- **[Anthropic MCP 공식 레퍼런스](https://github.com/modelcontextprotocol/servers)**: Anthropic이 직접 관리하는 파일시스템, Git, 메모리, SQLite 등 공식 표준 MCP 서버 모음입니다.
+- **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**: 실시간 인기 MCP 도구 순위 및 웹 스펙을 한눈에 비교할 수 있는 글로벌 디렉터리입니다.
 
 ---
 
