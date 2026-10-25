@@ -130,6 +130,15 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 | 7 | **Sensory Scene Describer** | `sensory-scene-describer` | [SKILL.md](skills/en/04_creative_arts/sensory-scene-describer/SKILL.md) |
 | 8 | **PromptPilot MCP Server** | `visual-prompt-optimizer` | [SKILL.md](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
 
+### 🌐 Next Steps: Explore the Wider Ecosystem
+
+> **"Comfortable with these 40 starter skills? You are ready to explore the broader ecosystem."**
+
+- 📦 **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**: The community-driven mega-catalog of Model Context Protocol servers worldwide.
+- 🌐 **[Anthropic MCP Registry](https://github.com/modelcontextprotocol/servers)**: Official reference implementations for filesystems, Git, database connectors, and memory.
+- ⚡ **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**: Real-time popular server rankings and integration directory.
+- 🇰🇷 **[SkillBook (스킬북)](https://www.getskillbook.com/)** *(by [@BBBang9900](https://twitter.com/BBBang9900))*: Curated Korean AI workflows, productivity tools, and practical prompts for creators and planners.
+
 ---
 
 <a name="한국어"></a>
@@ -212,25 +221,14 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 
 ---
 
-## 🌐 더 넓은 AI 생태계로 확장하기 (Next Steps & Ecosystem)
+### 🌐 다음 단계: 더 넓은 AI 도구 생태계로 확장하기
 
 > **"이 40개 기본 스킬셋에 익숙해지셨나요? 이제 더 방대한 상위 도구 생태계로 나아갈 준비가 되었습니다."**
 
-초기 온보딩과 실무 적응을 마친 사용자분들을 위해, 검증된 국내외 대표 허브들을 엄선해 소개합니다.
-
-### 🇰🇷 한국인 실무자 & 비개발자를 위한 필수 가이드
-* **[스킬북 (SkillBook)](https://www.getskillbook.com/)** *(by 꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900))*:
-  * 직장인, 기획자, 취업준비생, 1인 창업가를 위한 국내 최고의 실무 AI 도구·프롬프트 큐레이션 플랫폼입니다.
-  * 복잡한 코드 없이도 즉시 업무 생산성을 극대화할 수 있는 한국어 맞춤형 AI 활용 사례와 실무 팁이 풍부하게 정리되어 있습니다.
-
-### 🌍 글로벌 개발자 생태계 & 대규모 MCP 카탈로그
-* **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**:
-  * 전 세계 수많은 개발자들이 기여하고 검증한 Model Context Protocol(MCP) 서버들의 메가 아카이브입니다.
-  * DB 연동, 브라우저 자동화, 클라우드 인프라 제어 등 대규모 프로젝트용 도구가 망라되어 있습니다.
-* **[Anthropic MCP 공식 레퍼런스](https://github.com/modelcontextprotocol/servers)**:
-  * Anthropic이 직접 관리하는 파일시스템, Git, 메모리, SQLite 등 공식 표준 MCP 서버 모음입니다.
-* **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**:
-  * 실시간으로 가장 인기 있는 MCP 도구 순위 및 웹 스펙을 한눈에 비교할 수 있는 글로벌 디렉터리입니다.
+- 🇰🇷 **[스킬북 (SkillBook)](https://www.getskillbook.com/)** *(by 꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900))*: 직장인, 기획자, 취업준비생, 1인 창업가를 위한 국내 최고의 실무 AI 도구·프롬프트 큐레이션 플랫폼입니다.
+- 📦 **[Awesome MCP Servers (GitHub)](https://github.com/punkpeye/awesome-mcp-servers)**: 전 세계 수많은 개발자들이 기여하고 검증한 Model Context Protocol(MCP) 서버들의 메가 아카이브입니다.
+- 🌐 **[Anthropic MCP 공식 레퍼런스](https://github.com/modelcontextprotocol/servers)**: Anthropic이 직접 관리하는 파일시스템, Git, 메모리, SQLite 등 공식 표준 MCP 서버 모음입니다.
+- ⚡ **[PulseMCP](https://www.pulsemcp.com/) & [Glama](https://glama.ai/mcp/servers)**: 실시간 인기 MCP 도구 순위 및 웹 스펙을 한눈에 비교할 수 있는 글로벌 디렉터리입니다.
 
 ---
 
