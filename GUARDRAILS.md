@@ -9,6 +9,7 @@
 - **Zero Unprompted Overwrites**: When asked to fix, update, or refactor existing code or text, the agent must NOT unilaterally overwrite target files.
 - **Draft or Plan First**: The agent must output a structured draft, proposal, or unified diff first. Destructive file writes are executed only after explicit user confirmation (`Proceed`, `Apply`, `Fix this`).
 - **Scope Ambiguity Guard**: If the request lacks specific target file boundaries (e.g., bare "fix this bug" or "clean this up"), the agent must clarify the exact scope before touching files.
+- **Zero Silent Edits (Hash Invariance)**: A written refusal alone is not enough. During unapproved requests or review-only tasks, workspace hash state must remain strictly invariant (assert zero changed files).
 
 ## 2. Cross-Lingual Parity (이중언어 동등성)
 - **Behavioral Equivalence**: Korean prompts and English prompts must trigger identical constraints. An English prompt ("Fix this") does not grant higher write permissions than its Korean counterpart ("이거 고쳐줘").
