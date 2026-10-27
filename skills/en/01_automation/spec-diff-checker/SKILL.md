@@ -43,3 +43,22 @@ Cross-references planning specifications with actual UI outputs to identify miss
 ### 🛠️ Quick Customization Tips
 - **[Severity Filter]**: "List only critical blockers and missing functional components."
 - **[Format Conversion]**: "Format discrepancy audit as a GitHub issue checklist."
+
+---
+
+### 4. Practical Usage Example
+
+**Your Prompt:**
+> "Please run spec-diff-checker against my `login-page-spec.md` and the current `Login.jsx` file to find missing UI components."
+
+**Expected Output:**
+> ## Specification Discrepancy Audit
+> 
+> | Component / Area | Expected Spec | Current Implementation | Status | Recommended Fix |
+> | :--- | :--- | :--- | :--- | :--- |
+> | [SSO Button] | [Include Google SSO option] | [Only Email/Password available] | Missing | Implement Google Auth Provider button |
+> | [Password Field] | [Reveal password toggle icon] | [Standard hidden input field] | Missing | Add 'eye' icon with toggle state |
+> 
+> ## Critical Action Items
+> 1. **Blocking Issues**: Users cannot log in via SSO as required by spec.
+> 2. **Cosmetic Adjustments**: Missing reveal toggle hinders UX for password entry.

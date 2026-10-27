@@ -43,3 +43,15 @@ Guides creators from raw concept to finished text through sequential, step-by-st
 ### 🛠️ Quick Customization Tips
 - **Adjust Length**: "Expand this section with one concrete implementation example."
 - **Shift Tone**: "Make this paragraph more direct and concise for technical readers."
+
+---
+
+### 4. Practical Usage Example
+
+**Your Prompt:**
+> "Let's use doc-coauthoring to write an introduction for our new API rate limiting feature."
+
+**Expected Output (Stage 1 - Scope):**
+> Great! To get started, please provide exactly 3 core keywords and describe your target audience intent. 
+> 
+> *Example response: "rate-limits, fair-use, headers / Target audience: backend developers integrating our API"*

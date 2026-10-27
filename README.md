@@ -6,8 +6,22 @@
 
 [English](#english) | [한국어](#한국어)
 
-A collection of 40 AI agent skills (`SKILL.md`) available in both English and Korean.  
-Designed to provide ready-to-use drafts directly, saving you time on repetitive setup and manual drafting.
+## Navigation & Quickstart
+
+Welcome, visitors from Reddit and Twitter! 🚀 
+Explore our curated collection of 40 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
+
+**Quick Navigation:**
+- 🛠️ [**Core Tools**](#00-core-official-anthropic-core-reference)
+- ⚙️ [**Daily Automation**](#01-daily-automation)
+- 🧰 [**Practical Utilities**](#02-everyday-utilities)
+- 🎮 [**Game Dev & Worldbuilding**](#03-game-dev-and-worldbuilding)
+- 🎨 [**Creative & Visual Arts**](#04-creative-and-visual-content-design-and-media)
+
+**How to get started in 1 minute:**
+1. Pick a skill folder from the `skills/en` directory.
+2. Drop it into your AI agent's skills directory (e.g., `.claude/skills/`, `.cursor/rules/`).
+3. Call it in your prompt! Example: `@brand-guidelines audit this markdown document`.
 
 Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
 

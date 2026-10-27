@@ -47,3 +47,27 @@ Best regards,
 ### 🛠️ Quick Customization Tips
 - **Executive Brevity**: "Condense this draft to 3 concise bullet points and a single call to action."
 - **Internal Team Tone**: "Shift tone to informal and collaborative for a quick team update."
+
+---
+
+### 4. Practical Usage Example
+
+**Your Prompt:**
+> "Apply business-email-formatter to these notes: design is done, dev starts next week, need QA to prep test cases by friday."
+
+**Expected Output:**
+> Subject: Update: Design Completion & QA Prep Needed
+> 
+> Hi [Team/Name],
+> 
+> I wanted to share a quick update on our project timeline. The design phase is officially complete, and development will kick off next week.
+> 
+> **Key Points & Updates:**
+> - **Design**: Completed successfully.
+> - **Development**: Starts next week.
+> - **Action Item**: QA team, please have the test cases prepared by this Friday.
+> 
+> Best regards,
+> 
+> [Sender Name]  
+> [Sender Title/Team]

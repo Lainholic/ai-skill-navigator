@@ -43,3 +43,23 @@ Replaces long passive explanation dumps with guided Socratic dialogue and relata
 ### 🛠️ Quick Customization Tips
 - **Deep Dive**: "Increase difficulty to undergraduate level for subsequent questions."
 - **Code Example**: "Anchor the next guided question around a 3-line Python snippet."
+
+---
+
+### 4. Practical Usage Example
+
+**Your Prompt:**
+> "Use academy-guide to help me understand how a load balancer works."
+
+**Expected Output:**
+> ## Topic: Load Balancers
+> 
+> ### Everyday Analogy
+> > Imagine you manage a very popular restaurant. If there's only one host seating guests, a huge line will form and people will get frustrated. But if you have a "head host" who directs arriving guests to three different smaller lines, everyone gets seated much faster without overwhelming any single person.
+> 
+> ### Checkpoint Question
+> If one of your seating areas suddenly closes because a waiter dropped a huge tray of food, what should the "head host" do with the new guests walking in the door?
+> 
+> ### Next Step
+> - Reply with your thought or hypothesis.
+> - Type "Hint" if you need a narrower clue.

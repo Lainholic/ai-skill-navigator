@@ -44,3 +44,18 @@ Converts raw user intent into production-grade SKILL.md specifications without r
 ### 🛠️ Quick Customization Tips
 - **One-Shot Mode**: "Skip intake questions; infer target and inputs from this rough draft: [paste text]."
 - **Strict Schema**: "Format the resulting skill's output template as valid JSON schema."
+
+---
+
+### 4. Practical Usage Example
+
+**Your Prompt:**
+> "I want to use skill-creator to make a new skill that turns meeting transcripts into action items."
+
+**Expected Output (Step 1):**
+> ## Step 1: Intake Questionnaire
+> 1. **Target Audience**: Who will execute or benefit from this skill? (e.g., Project Managers)
+> 2. **Input Material**: What specific data, text, or parameters will be provided? (e.g., Zoom raw transcripts)
+> 3. **Expected Output**: What exact structure or template must the response follow? (e.g., Markdown checklist grouped by assignee)
+> 
+> *Please reply to these 3 questions, and I will generate your `SKILL.md` immediately.*
