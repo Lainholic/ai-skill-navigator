@@ -1,6 +1,6 @@
 ---
 name: social-thread-formatter
-description: Transforms long-form articles into structured social media threads with compelling opening hooks. Saves you time.
+description: Transforms long-form articles into structured social media threads with compelling opening hooks.
 ---
 # Social Thread Splitter — Long-Form Content Condensation Specialist
 
@@ -38,7 +38,6 @@ Converts blog posts, technical articles, and planning documents into sequential 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Generates 3 distinct hook variations and 5–7 sequential posts natively without external tools.
-- Saves you time.
 
 ---
 

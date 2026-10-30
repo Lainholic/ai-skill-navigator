@@ -1,6 +1,6 @@
 ---
 name: multichannel-content-adapter
-description: Adapts a single source draft into distinct formats for LinkedIn, Instagram, and X. Saves you time.
+description: Adapts a single source draft into distinct formats for LinkedIn, Instagram, and X.
 ---
 # Content Distribution Adapter — Multi-Channel Editorial Specialist
 
@@ -39,7 +39,6 @@ Repurposes a single text draft into three platform-tailored formats in parallel.
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Produces 3 parallel channel drafts from one input text.
-- Saves you time.
 
 ---
 

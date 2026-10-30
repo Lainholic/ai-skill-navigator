@@ -1,6 +1,6 @@
 ---
 name: concept-moodboard-builder
-description: Translates abstract mood concepts into structured visual direction specs and design assets. Saves you time.
+description: Translates abstract mood concepts into structured visual direction specs and design assets.
 ---
 
 # Aesthetics Wiki Director — Structured Visual Concept Generator
@@ -41,7 +41,6 @@ Converts ambiguous design themes and aesthetic keywords into concrete production
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Color codes and typography recommendations should be tested against project contrast requirements.
-- Saves you time.
 
 ---
 

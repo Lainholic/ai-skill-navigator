@@ -1,6 +1,6 @@
 ---
 name: sensory-scene-describer
-description: Generates multi-layered olfactory and atmospheric scene descriptions structured by perfumery scent notes. Saves you time.
+description: Generates multi-layered olfactory and atmospheric scene descriptions structured by perfumery scent notes.
 ---
 
 # Sensory Scene Describer — Immersive Olfactory and Spatial Description Generator
@@ -39,7 +39,6 @@ Transforms visual-heavy drafts into multi-sensory scenes using top, middle, and 
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

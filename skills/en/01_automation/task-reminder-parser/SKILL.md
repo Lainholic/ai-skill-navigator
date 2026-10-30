@@ -1,6 +1,6 @@
 ---
 name: task-reminder-parser
-description: Converts unstructured brain dumps and meeting notes into three core actionable missions with time estimates and deadlines. Saves you time.
+description: Converts unstructured brain dumps and meeting notes into three core actionable missions with time estimates and deadlines.
 ---
 # Daily Task Decomposer — Thought Dump to Actionable Checklist Converter
 
@@ -41,7 +41,6 @@ Converts chaotic monologues, quick voice transcripts, and raw meeting notes into
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Paste stream-of-consciousness voice memos, meeting notes, or chat threads directly.
-- Saves you time.
 
 ---
 

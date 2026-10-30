@@ -76,7 +76,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 3. The skill provides an immediate working draft without extra installation steps.
 
 ### 00. Inspired by Anthropic's Agent Skills ([github.com/anthropics/skills](https://github.com/anthropics/skills))
-> Essential document and layout creation tools streamlined for direct productivity. Saves you time.
+> Essential document and layout creation tools streamlined for direct productivity.
 
 | # | Skill Name | Identifier | Link |
 | :-: | :--- | :--- | :--- |
@@ -162,10 +162,10 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 ### 사용 방법
 1. 필요한 도구를 `skills/ko/<카테고리>/<스킬이름>/SKILL.md`에서 확인합니다.
 2. 시스템 프롬프트 또는 에이전트 지침 폴더에 복사해 넣습니다.
-3. 별도 설치 없이 즉시 작동하여 작업 시간을 아껴줍니다.
+3. 별도 설치 없이 즉시 작동하여 작업.
 
 ### 00. Inspired by Anthropic's Agent Skills ([github.com/anthropics/skills](https://github.com/anthropics/skills))
-> 불필요한 기술 설정을 걷어내고 실무 문서 작성과 서식 설계를 돕는 핵심 스킬 모음입니다. 시간을 아껴줍니다.
+> 불필요한 기술 설정을 걷어내고 실무 문서 작성과 서식 설계를 돕는 핵심 스킬 모음입니다.
 
 | 번호 | 스킬명 | 식별자 | 링크 |
 | :-: | :--- | :--- | :--- |
@@ -179,7 +179,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 | 8 | **컬러 팔레트 & 무드보드 생성기** | `theme-factory` | [SKILL.md](skills/ko/00_core_official/theme-factory/SKILL.md) |
 
 ### 01. 업무 자동화 (Daily Automation)
-> 반복되는 웹 글 정리, 탭 분류, 일정 정리를 보조하여 수작업 시간을 아껴줍니다.
+> 반복되는 웹 글 정리, 탭 분류, 일정 정리를 보조하여 수작업.
 
 | 번호 | 스킬명 | 식별자 | 링크 |
 | :-: | :--- | :--- | :--- |
@@ -193,7 +193,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 | 8 | **웹페이지 본문 정제기** | `web-article-cleaner` | [SKILL.md](skills/ko/01_automation/web-article-cleaner/SKILL.md) |
 
 ### 02. 실무 유틸리티 (Everyday Utilities)
-> 비즈니스 이메일, 회의록 정리, SNS 포맷 변환 등 일상 업무의 초안 작성 시간을 아껴줍니다.
+> 비즈니스 이메일, 회의록 정리, SNS 포맷 변환 등 일상 업무의 초안 작성.
 
 | 번호 | 스킬명 | 식별자 | 링크 |
 | :-: | :--- | :--- | :--- |
@@ -207,7 +207,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 | 8 | **업무 스레드 및 회의록 정리기** | `thread-meeting-summarizer` | [SKILL.md](skills/ko/02_utility/thread-meeting-summarizer/SKILL.md) |
 
 ### 03. 게임 및 세계관 (Game Dev and Worldbuilding)
-> TRPG 룰, 수치 밸런스, 퀘스트 구조화 등 창작자의 기초 설계 시간을 아껴줍니다.
+> TRPG 룰, 수치 밸런스, 퀘스트 구조화 등 창작자의 기초 설계.
 
 | 번호 | 스킬명 | 식별자 | 링크 |
 | :-: | :--- | :--- | :--- |
@@ -221,7 +221,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 | 8 | **즉흥 TRPG 인카운터 생성기** | `ttrpg-encounter-helper` | [SKILL.md](skills/ko/03_gamedev/ttrpg-encounter-helper/SKILL.md) |
 
 ### 04. 창작 및 비주얼 (Creative and Visual Content)
-> SVG 아이콘, 무드보드 배색, 프롬프트 최적화 등 시각 콘텐츠 제작의 고민 시간을 아껴줍니다.
+> SVG 아이콘, 무드보드 배색, 프롬프트 최적화 등 시각 콘텐츠 제작의 고민.
 
 | 번호 | 스킬명 | 식별자 | 링크 |
 | :-: | :--- | :--- | :--- |

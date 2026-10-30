@@ -1,6 +1,6 @@
 ---
 name: interactive-fiction-helper
-description: Executes zero-code interactive fiction and text TRPG sessions with persistent status tracking. Saves you time.
+description: Executes zero-code interactive fiction and text TRPG sessions with persistent status tracking.
 ---
 # Text TRPG & Interactive Fiction Engine — State-Tracking Gamebook & Narrative Choice Runner
 
@@ -37,7 +37,6 @@ Runs conversational interactive fiction and text TRPG scenarios without code, ma
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

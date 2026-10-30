@@ -1,6 +1,6 @@
 ---
 name: rpg-dialogue-formatter
-description: Converts NPC personality, quest conflicts, and reward parameters into ready-to-paste RPG Maker event dialogue and branch logic. Saves you time.
+description: Converts NPC personality, quest conflicts, and reward parameters into ready-to-paste RPG Maker event dialogue and branch logic.
 ---
 # RPG Maker XP Event Builder — Quest Script and Branching Logic Generator
 
@@ -43,7 +43,6 @@ Transforms basic story inputs into engine-ready dialogue blocks and conditional 
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

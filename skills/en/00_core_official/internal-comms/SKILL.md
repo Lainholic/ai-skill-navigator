@@ -1,6 +1,6 @@
 ---
 name: internal-comms
-description: Formats professional internal communications from essential inputs. Saves you time.
+description: Formats professional internal communications from essential inputs.
 ---
 # Internal Communications Formatter — Workplace Message and Announcement Composer
 
@@ -34,7 +34,6 @@ Converts rough message intent into clear, polite, and conflict-free workplace co
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Paste directly into corporate email, Slack, or Teams.
-- Saves you time.
 
 ---
 

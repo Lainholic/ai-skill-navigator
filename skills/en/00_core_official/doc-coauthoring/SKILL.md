@@ -1,6 +1,6 @@
 ---
 name: doc-coauthoring
-description: Guides long-form writing through structured ping-pong drafting. Saves you time.
+description: Guides long-form writing through structured ping-pong drafting.
 ---
 # Collaborative Drafting Partner — Iterative Writing and Structure Refiner
 
@@ -36,7 +36,6 @@ Guides creators from raw concept to finished text through sequential, step-by-st
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Reply with 'Next' to accept the current paragraph and move forward.
-- Saves you time.
 
 ---
 

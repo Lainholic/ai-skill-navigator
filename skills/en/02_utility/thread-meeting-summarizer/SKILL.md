@@ -1,6 +1,6 @@
 ---
 name: thread-meeting-summarizer
-description: Filters email signatures, headers, and quote noise to extract core decisions and assigned action items. Saves you time.
+description: Filters email signatures, headers, and quote noise to extract core decisions and assigned action items.
 ---
 # Thread Noise Reducer — Actionable Decision and Task Extractor
 
@@ -40,7 +40,6 @@ Strips greetings, disclaimers, nested blockquotes, and signature blocks from lon
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

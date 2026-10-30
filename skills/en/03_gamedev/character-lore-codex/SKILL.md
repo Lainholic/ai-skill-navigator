@@ -1,6 +1,6 @@
 ---
 name: character-lore-codex
-description: Generates structured character voice lines and speech mannerisms from visual keywords and personality traits. Saves you time.
+description: Generates structured character voice lines and speech mannerisms from visual keywords and personality traits.
 ---
 # Subculture Character Voice Line Generator — Character Voice Architecture & In-Game Dialogue Script Generator
 
@@ -39,7 +39,6 @@ Generates consistent character speech rules, catchphrases, and an 8-part in-game
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

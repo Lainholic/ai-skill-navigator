@@ -1,6 +1,6 @@
 ---
 name: pptx
-description: Structures slide decks into modular content cards with speaking notes. Saves you time.
+description: Structures slide decks into modular content cards with speaking notes.
 ---
 # Presentation Deck Architect — Slide Storyline and Script Generator
 
@@ -34,7 +34,6 @@ Transforms presentation ideas into structured, slide-by-slide narrative outlines
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Copy text blocks directly into slide placeholders and presenter note panels.
-- Saves you time.
 
 ---
 

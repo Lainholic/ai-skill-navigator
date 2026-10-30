@@ -1,6 +1,6 @@
 ---
 name: ttrpg-encounter-helper
-description: Generates balanced monster gimmicks, encounter DCs, and failure consequences based on party level and terrain. Saves you time.
+description: Generates balanced monster gimmicks, encounter DCs, and failure consequences based on party level and terrain.
 ---
 # DnD Oracle — Impromptu Encounter and Mechanic Sheet Generator
 
@@ -44,7 +44,6 @@ Produces combat and environmental encounter sheets tailored to party level and t
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

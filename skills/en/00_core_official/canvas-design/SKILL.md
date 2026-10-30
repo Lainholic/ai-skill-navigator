@@ -1,6 +1,6 @@
 ---
 name: canvas-design
-description: Generates concise cover copy and text wireframe layouts for social media thumbnails and blog cards. Saves you time.
+description: Generates concise cover copy and text wireframe layouts for social media thumbnails and blog cards.
 ---
 # Canvas Design — Thumbnail Wireframe and Copy Planner
 
@@ -43,7 +43,6 @@ Creates high-impact visual blueprints and concise copy for Instagram cards and b
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

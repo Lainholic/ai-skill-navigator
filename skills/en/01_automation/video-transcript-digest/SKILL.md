@@ -1,6 +1,6 @@
 ---
 name: video-transcript-digest
-description: Condenses raw video transcripts into three-sentence executive takeaways, timestamped milestones, and practical action plans. Saves you time.
+description: Condenses raw video transcripts into three-sentence executive takeaways, timestamped milestones, and practical action plans.
 ---
 # YouTube Transcript Summarizer — Video Takeaway and Actionable Timeline Extractor
 
@@ -41,7 +41,6 @@ Processes raw YouTube transcripts and subtitle feeds into structured briefings. 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Handles raw pasted subtitles, automated transcripts, or MCP tool outputs.
-- Saves you time.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: video-metadata-packager
-description: Generates high-converting YouTube titles, SEO descriptions, and tags from a single video summary. Saves you time.
+description: Generates high-converting YouTube titles, SEO descriptions, and tags from a single video summary.
 ---
 # YouTube Metadata Packager — Video Metadata & Copy Generator
 
@@ -41,7 +41,6 @@ Transforms a one-line video summary into five click-worthy title candidates, an 
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

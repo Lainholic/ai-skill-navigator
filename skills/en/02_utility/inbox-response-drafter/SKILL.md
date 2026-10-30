@@ -1,6 +1,6 @@
 ---
 name: inbox-response-drafter
-description: Categorizes inbound emails by priority and generates three ready-to-send reply drafts. Saves you time.
+description: Categorizes inbound emails by priority and generates three ready-to-send reply drafts.
 ---
 # Inbox Triage Assistant — Email Prioritization and Rapid Reply Specialist
 
@@ -41,7 +41,6 @@ Classifies incoming email text by urgency and provides three ready-to-send respo
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Generates priority classification and 3 distinct reply options from pasted text alone.
-- Saves you time.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: skill-validation-checklist
-description: Audits prompts across four operational criteria, assigns an A–F grade, and provides an immediate revision. Saves you time.
+description: Audits prompts across four operational criteria, assigns an A–F grade, and provides an immediate revision.
 ---
 # Prompt Quality Audit Checklist — Five-Pillar Validation and Remediation Engine
 
@@ -41,7 +41,6 @@ Evaluates prompts and SKILL.md instructions across role definition, few-shot exa
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

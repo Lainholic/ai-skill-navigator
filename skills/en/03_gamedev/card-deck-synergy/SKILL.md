@@ -1,6 +1,6 @@
 ---
 name: card-deck-synergy
-description: Builds balanced card game synergy decks and cost-curve mechanics for tabletop card design. Saves you time.
+description: Builds balanced card game synergy decks and cost-curve mechanics for tabletop card design.
 ---
 # Card Game Mechanic & Deck Architect — TCG Cost-Curve & Synergy Deck Builder
 
@@ -40,7 +40,6 @@ Generates balanced card sets with cost-curve distribution (1–6 cost), synergy 
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

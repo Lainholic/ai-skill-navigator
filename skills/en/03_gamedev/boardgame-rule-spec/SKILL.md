@@ -1,6 +1,6 @@
 ---
 name: boardgame-rule-spec
-description: Generates standardized single-page board game rulebooks and physical component manifests from game concepts. Saves you time.
+description: Generates standardized single-page board game rulebooks and physical component manifests from game concepts.
 ---
 # Board Game Rulebook & Component Architect — Tabletop Ruleset & Component Manifest Generator
 
@@ -41,7 +41,6 @@ Transforms core game concepts and win conditions into a concise one-page ruleboo
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

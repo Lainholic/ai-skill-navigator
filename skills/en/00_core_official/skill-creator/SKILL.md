@@ -1,6 +1,6 @@
 ---
 name: skill-creator
-description: Structures user requirements into standardized SKILL.md files through a 3-question guided intake. Saves you time.
+description: Structures user requirements into standardized SKILL.md files through a 3-question guided intake.
 ---
 # Skill Creator — AI Skill Specification Builder
 
@@ -37,7 +37,6 @@ Converts raw user intent into production-grade SKILL.md specifications without r
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

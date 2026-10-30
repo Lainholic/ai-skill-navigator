@@ -1,6 +1,6 @@
 ---
 name: game-balance-calculator
-description: Generates progression stat curves and gacha probability tables from target playtimes and currency values. Saves you time.
+description: Generates progression stat curves and gacha probability tables from target playtimes and currency values.
 ---
 # Game Numerics — Progression Curve and Gacha Balance Designer
 
@@ -41,7 +41,6 @@ Calculates balanced level progression curves and cumulative gacha pull tables di
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

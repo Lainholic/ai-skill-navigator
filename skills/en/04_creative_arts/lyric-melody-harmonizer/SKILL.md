@@ -1,6 +1,6 @@
 ---
 name: lyric-melody-harmonizer
-description: Maps raw song lyrics and mood keywords to functional chord progressions and rhythmic syllable structures. Saves you time.
+description: Maps raw song lyrics and mood keywords to functional chord progressions and rhythmic syllable structures.
 ---
 
 # Lyric Melody Arranger — Chord Progression and Meter Guide for Songwriters
@@ -44,7 +44,6 @@ Assists lyricists and indie creators without music theory knowledge in aligning 
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

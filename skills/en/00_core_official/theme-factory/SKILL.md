@@ -1,6 +1,6 @@
 ---
 name: theme-factory
-description: Generates cohesive 5-color palettes, typography pairings, and layout color assignments from mood keywords. Saves you time.
+description: Generates cohesive 5-color palettes, typography pairings, and layout color assignments from mood keywords.
 ---
 # Theme Factory — Visual Identity and Palette Generator
 
@@ -38,7 +38,6 @@ Converts thematic keywords into production-ready color schemes and typographic p
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: business-email-formatter
-description: Converts unformatted markdown notes into structured, professional business email drafts. Saves you time.
+description: Converts unformatted markdown notes into structured, professional business email drafts.
 ---
 # Business Email Formatter — Plaintext-to-Email Layout Specialist
 
@@ -40,7 +40,6 @@ Best regards,
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Compatible with direct copy-paste into email clients without formatting loss.
-- Saves you time.
 
 ---
 

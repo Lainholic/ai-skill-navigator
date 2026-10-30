@@ -1,6 +1,6 @@
 ---
 name: visual-prompt-optimizer
-description: Converts brief image concepts into structured Midjourney and GPT Image English prompts with technical camera and lighting parameters. Saves you time.
+description: Converts brief image concepts into structured Midjourney and GPT Image English prompts with technical camera and lighting parameters.
 ---
 
 # Visual Prompt Optimizer — Image Prompt Generator
@@ -35,7 +35,6 @@ Transforms basic, one-line image ideas into comprehensive English prompts optimi
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Adjust the aspect ratio tags (`--ar`) according to your target display platform.
-- Saves you time.
 
 ---
 

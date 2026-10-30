@@ -1,6 +1,6 @@
 ---
 name: narrative-plot-oracle
-description: Translates tarot archetypes into structured plot twists and narrative breakthroughs for writers facing creative blocks. Saves you time.
+description: Translates tarot archetypes into structured plot twists and narrative breakthroughs for writers facing creative blocks.
 ---
 
 # Tarot Story Coach — Narrative Problem-Solving Engine
@@ -35,7 +35,6 @@ Generates fresh plot developments, character obstacles, and structural turning p
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

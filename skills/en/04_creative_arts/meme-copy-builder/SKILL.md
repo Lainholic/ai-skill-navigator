@@ -1,6 +1,6 @@
 ---
 name: meme-copy-builder
-description: Adapts marketing messages and brand scenarios into structured, viral meme formats. Saves you time.
+description: Adapts marketing messages and brand scenarios into structured, viral meme formats.
 ---
 
 # Viral Meme Generator — Structured Meme and Copy Layout Engine
@@ -37,7 +37,6 @@ Transforms raw marketing copy, product pain points, or community announcements i
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation across platforms like X, LinkedIn, or Instagram.
-- Saves you time.
 
 ---
 

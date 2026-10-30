@@ -1,6 +1,6 @@
 ---
 name: brand-guidelines
-description: Extracts writing voice rules and audits content against persona standards. Saves you time.
+description: Extracts writing voice rules and audits content against persona standards.
 ---
 # Brand Voice Compass — Editorial Persona and Terminology Guide
 
@@ -38,7 +38,6 @@ Establishes and enforces a consistent personal or brand voice from existing writ
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

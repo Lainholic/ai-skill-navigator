@@ -1,6 +1,6 @@
 ---
 name: classic-art-palette-curator
-description: Extracts classic fine-art color palettes, compositions, and typography pairings for non-designers building content visuals. Saves you time.
+description: Extracts classic fine-art color palettes, compositions, and typography pairings for non-designers building content visuals.
 ---
 
 # Classic Art Palette Curator — Fine-Art Color and Layout Guide
@@ -47,7 +47,6 @@ Generates curated 5-color HEX palettes, layout schemes, and typography pairings 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Palettes adhere to WCAG-compliant contrast ratios between text and background surfaces.
-- Saves you time.
 
 ---
 

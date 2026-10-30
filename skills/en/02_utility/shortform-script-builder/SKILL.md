@@ -1,6 +1,6 @@
 ---
 name: shortform-script-builder
-description: Generates structured 45-second short-form video scripts with retention-focused hooks and CTAs. Saves you time.
+description: Generates structured 45-second short-form video scripts with retention-focused hooks and CTAs.
 ---
 # Short-Form Video Script Generator — 45-Second Hook & Retention Framework
 
@@ -41,7 +41,6 @@ Converts raw topic ideas into high-retention 45-second scripts featuring a 3-sec
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

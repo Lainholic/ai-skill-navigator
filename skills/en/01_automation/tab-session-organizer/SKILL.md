@@ -1,6 +1,6 @@
 ---
 name: tab-session-organizer
-description: Categorizes open browser tab dumps into action-oriented buckets and prioritized triage checklists. Saves you time.
+description: Categorizes open browser tab dumps into action-oriented buckets and prioritized triage checklists.
 ---
 # Browser Tab Triage Organizer — Actionable Prioritization and Reading Queue Sorter
 
@@ -42,7 +42,6 @@ Organizes disorganized browser tab collections and session URLs into clear funct
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Paste tab titles, URLs, or browser window session dumps in any arbitrary order.
-- Saves you time.
 
 ---
 

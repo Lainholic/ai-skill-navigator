@@ -1,6 +1,6 @@
 ---
 name: inline-svg-generator
-description: Generates clean, ready-to-embed inline SVG vectors and logos on demand without design software. Saves you time.
+description: Generates clean, ready-to-embed inline SVG vectors and logos on demand without design software.
 ---
 
 # SVG Vector Generator — Clean Vector Graphics & Logo Drafting
@@ -31,7 +31,6 @@ Generates standalone, web-ready inline SVG vector code directly from descriptive
 ### 3. User Notes
 - All outputs are plain SVG code blocks optimized for immediate copy-pasting into HTML, React, or modern web frameworks.
 - Modifications can be requested iteratively by targeting specific paths, fills, or dimensions.
-- Saves you time.
 
 ---
 

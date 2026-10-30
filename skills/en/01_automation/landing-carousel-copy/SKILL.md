@@ -1,6 +1,6 @@
 ---
 name: landing-carousel-copy
-description: Converts long-form articles and notices into standardized social media carousel slide decks. Saves you time.
+description: Converts long-form articles and notices into standardized social media carousel slide decks.
 ---
 # Social Carousel Copywriter — Long-Form Content to Carousel Script Converter
 
@@ -37,7 +37,6 @@ Restructures blog posts, articles, and long announcements into a standardized ca
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

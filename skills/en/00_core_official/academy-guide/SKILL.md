@@ -1,6 +1,6 @@
 ---
 name: academy-guide
-description: Facilitates step-by-step conceptual learning using middle-school analogies and guided Socratic questioning instead of direct answers. Saves you time.
+description: Facilitates step-by-step conceptual learning using middle-school analogies and guided Socratic questioning instead of direct answers.
 ---
 # Academy Guide — Socratic Conceptual Tutor
 
@@ -36,7 +36,6 @@ Replaces long passive explanation dumps with guided Socratic dialogue and relata
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

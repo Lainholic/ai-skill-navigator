@@ -1,6 +1,6 @@
 ---
 name: game-review-digest
-description: Extracts positive reception drivers, negative friction points, and actionable benchmarking takeaways from raw Steam user reviews. Saves you time.
+description: Extracts positive reception drivers, negative friction points, and actionable benchmarking takeaways from raw Steam user reviews.
 ---
 # Steam Review Analyzer — Competitive Intelligence and Sentiment Breakdown
 
@@ -41,7 +41,6 @@ Condenses raw Steam player reviews into structured sentiment themes and competit
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

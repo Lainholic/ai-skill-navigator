@@ -1,6 +1,6 @@
 ---
 name: real-estate-copywriter
-description: Translates room dimensions and structural data into lifestyle personas, styling concepts, and real estate copy. Saves you time.
+description: Translates room dimensions and structural data into lifestyle personas, styling concepts, and real estate copy.
 ---
 # Real Estate Concept Copywriter — Spatial Profile to Narrative Brochure Generator
 
@@ -43,7 +43,6 @@ Converts raw room measurements, layouts, and furniture arrangements into targete
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 

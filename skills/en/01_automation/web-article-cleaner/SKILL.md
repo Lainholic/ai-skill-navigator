@@ -1,6 +1,6 @@
 ---
 name: web-article-cleaner
-description: Strips advertising, navigation clutter, and boilerplate from raw web page text to produce clean, distraction-free markdown. Saves you time.
+description: Strips advertising, navigation clutter, and boilerplate from raw web page text to produce clean, distraction-free markdown.
 ---
 # Web Content Sanitizer — Distraction-Free Markdown Extraction for Cluttered Articles
 
@@ -42,7 +42,6 @@ Converts ad-heavy web page copies and cluttered article dumps into clean, readab
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
 - Paste raw unformatted copy, browser text selections, or scraped web page content directly.
-- Saves you time.
 
 ---
 

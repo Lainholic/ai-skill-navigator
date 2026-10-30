@@ -1,6 +1,6 @@
 ---
 name: spec-diff-checker
-description: Compares UI requirements against implementation descriptions to identify missing elements and visual defects. Saves you time.
+description: Compares UI requirements against implementation descriptions to identify missing elements and visual defects.
 ---
 # UI Spec Verifier — Requirement-to-Implementation Diff Inspector
 
@@ -36,7 +36,6 @@ Cross-references planning specifications with actual UI outputs to identify miss
 
 ### 3. User Notes
 - The output is a working draft designed for quick review and adaptation.
-- Saves you time.
 
 ---
 
