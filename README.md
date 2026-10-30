@@ -12,7 +12,7 @@ Welcome, visitors from Reddit and Twitter! 🚀
 Explore our curated collection of 40 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
 
 **Quick Navigation:**
-- 🛠️ [**Core Tools**](#00-core-official-anthropic-core-reference)
+- 🛠️ [**Core Tools**](#00-inspired-by-anthropics-agent-skills-githubcomanthropicsskills)
 - ⚙️ [**Daily Automation**](#01-daily-automation)
 - 🧰 [**Practical Utilities**](#02-everyday-utilities)
 - 🎮 [**Game Dev & Worldbuilding**](#03-game-dev-and-worldbuilding)
@@ -20,7 +20,7 @@ Explore our curated collection of 40 AI agent skills (`SKILL.md`) available in b
 
 **How to get started in 1 minute:**
 1. Pick a skill folder from the `skills/en` directory.
-2. Drop it into your AI agent's skills directory (e.g., `.claude/skills/`, `.cursor/rules/`).
+2. Drop it into your AI agent's skills directory (e.g., `.claude/skills/`, `.cursor/skills/`).
 3. Call it in your prompt! Example: `@brand-guidelines audit this markdown document`.
 
 Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
@@ -32,7 +32,7 @@ Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
 ```
 skills/
 ├── ko/                     # 한국어 전용 스킬
-│   ├── 00_core_official/   # 공식 핵심 도구 (8종)
+│   ├── 00_core_official/   # Anthropic Agent Skills 참고 (8종)
 │   ├── 01_automation/      # 업무 자동화 (8종)
 │   ├── 02_utility/         # 실무 유틸리티 (8종)
 │   ├── 03_gamedev/         # 게임 및 세계관 (8종)
@@ -75,7 +75,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 2. Copy its contents into your system prompt, or place the skill directory into your AI workspace.
 3. The skill provides an immediate working draft without extra installation steps.
 
-### 00. Official Core Tools (Anthropic Core Reference: [github.com/anthropics/skills](https://github.com/anthropics/skills))
+### 00. Inspired by Anthropic's Agent Skills ([github.com/anthropics/skills](https://github.com/anthropics/skills))
 > Essential document and layout creation tools streamlined for direct productivity. Saves you time.
 
 | # | Skill Name | Identifier | Link |
@@ -150,7 +150,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 Additional catalogs and reference registries for expanding beyond these 40 skills:
 
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): Community collection of Model Context Protocol servers for databases, browser automation, and developer tools.
-- [Anthropic MCP Registry](https://github.com/modelcontextprotocol/servers): Official reference implementations for filesystems, Git, database connectors, and memory.
+- [MCP reference servers](https://github.com/modelcontextprotocol/servers): Official reference implementations for filesystems, Git, database connectors, and memory.
 - [PulseMCP](https://www.pulsemcp.com/) and [Glama](https://glama.ai/mcp/servers): Directory tracking MCP server rankings, updates, and specifications.
 - [SkillBook](https://www.getskillbook.com/) by [@BBBang9900](https://twitter.com/BBBang9900): Curated Korean AI workflows and prompt patterns for planning and writing tasks.
 
@@ -164,7 +164,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 2. 시스템 프롬프트 또는 에이전트 지침 폴더에 복사해 넣습니다.
 3. 별도 설치 없이 즉시 작동하여 작업 시간을 아껴줍니다.
 
-### 00. 공식 핵심 도구 (Anthropic Core Reference: [github.com/anthropics/skills](https://github.com/anthropics/skills))
+### 00. Inspired by Anthropic's Agent Skills ([github.com/anthropics/skills](https://github.com/anthropics/skills))
 > 불필요한 기술 설정을 걷어내고 실무 문서 작성과 서식 설계를 돕는 핵심 스킬 모음입니다. 시간을 아껴줍니다.
 
 | 번호 | 스킬명 | 식별자 | 링크 |
@@ -242,7 +242,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 
 - [스킬북 (SkillBook)](https://www.getskillbook.com/) (꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900)): 기획, 문서 작성, 일상 업무에 맞춘 한국어 AI 도구와 프롬프트 모음입니다.
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): 데이터베이스, 브라우저 제어 등 오픈소스 MCP 서버 모음입니다.
-- [Anthropic MCP 공식 레퍼런스](https://github.com/modelcontextprotocol/servers): 파일시스템, Git, 메모리 등 앤트로픽의 공식 레퍼런스 구현체입니다.
+- [MCP 레퍼런스 서버](https://github.com/modelcontextprotocol/servers): 파일시스템, Git, 메모리 등 MCP 공식 레퍼런스 서버 구현체 모음입니다.
 - [PulseMCP](https://www.pulsemcp.com/) 및 [Glama](https://glama.ai/mcp/servers): 실시간 인기 MCP 도구와 웹 스펙을 정리한 디렉터리입니다.
 
 ---
