@@ -52,11 +52,12 @@ skills/
 
 ## 1-Minute Quick Start (Where to Put & How to Run)
 
-| Editor / Agent | Where to drop the folder | Tested Status | Exact Invocation Example |
-| :--- | :--- | :---: | :--- |
-| **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | Verified | `claude -p "Use brand-guidelines to review this draft and strip out passive voice"` |
-| **Cursor / Windsurf** | `.cursor/rules/<skill-name>.md` | Verified | `@brand-guidelines audit this markdown document against our tone standards` |
-| **Antigravity / Codex** | `.agents/skills/<skill-name>/SKILL.md` | Verified | `"Follow brand-guidelines to refine the tone without altering core facts"` |
+| Editor / Agent | Where to drop the folder | Invocation Example |
+| :--- | :--- | :--- |
+| **Antigravity / Codex** | `.agents/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to review this draft and refine the tone"` |
+| **Cursor** | `.cursor/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to audit this document against our tone standards"` |
+| **Windsurf** | `.devin/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to audit this document against our tone standards"` |
+| **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to review this draft and strip out passive voice"` |
 
 ### Built-in Guardrail Standards (Bilingual Parity)
 All 40 skills adhere to our standard safety and execution principles across both English and Korean versions:
@@ -74,7 +75,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 2. Copy its contents into your system prompt, or place the skill directory into your AI workspace.
 3. The skill provides an immediate working draft without extra installation steps.
 
-### 00. Official Core Tools (Anthropic Core Reference)
+### 00. Official Core Tools (Anthropic Core Reference: [github.com/anthropics/skills](https://github.com/anthropics/skills))
 > Essential document and layout creation tools streamlined for direct productivity. Saves you time.
 
 | # | Skill Name | Identifier | Link |
@@ -135,14 +136,14 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 
 | # | Skill Name | Identifier | Link |
 | :-: | :--- | :--- | :--- |
-| 1 | **Open Museum MCP** | `classic-art-palette-curator` | [SKILL.md](skills/en/04_creative_arts/classic-art-palette-curator/SKILL.md) |
+| 1 | **Classic Art Palette Curator** | `classic-art-palette-curator` | [SKILL.md](skills/en/04_creative_arts/classic-art-palette-curator/SKILL.md) |
 | 2 | **Aesthetics Wiki Director** | `concept-moodboard-builder` | [SKILL.md](skills/en/04_creative_arts/concept-moodboard-builder/SKILL.md) |
 | 3 | **SVG Vector Generator** | `inline-svg-generator` | [SKILL.md](skills/en/04_creative_arts/inline-svg-generator/SKILL.md) |
 | 4 | **Lyric Melody Arranger** | `lyric-melody-harmonizer` | [SKILL.md](skills/en/04_creative_arts/lyric-melody-harmonizer/SKILL.md) |
 | 5 | **Viral Meme Generator** | `meme-copy-builder` | [SKILL.md](skills/en/04_creative_arts/meme-copy-builder/SKILL.md) |
 | 6 | **Tarot Story Coach** | `narrative-plot-oracle` | [SKILL.md](skills/en/04_creative_arts/narrative-plot-oracle/SKILL.md) |
 | 7 | **Sensory Scene Describer** | `sensory-scene-describer` | [SKILL.md](skills/en/04_creative_arts/sensory-scene-describer/SKILL.md) |
-| 8 | **PromptPilot MCP Server** | `visual-prompt-optimizer` | [SKILL.md](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
+| 8 | **Visual Prompt Optimizer** | `visual-prompt-optimizer` | [SKILL.md](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
 
 ### Ecosystem and Related Resources
 
@@ -163,7 +164,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 2. 시스템 프롬프트 또는 에이전트 지침 폴더에 복사해 넣습니다.
 3. 별도 설치 없이 즉시 작동하여 작업 시간을 아껴줍니다.
 
-### 00. 공식 핵심 도구 (Anthropic Core Reference)
+### 00. 공식 핵심 도구 (Anthropic Core Reference: [github.com/anthropics/skills](https://github.com/anthropics/skills))
 > 불필요한 기술 설정을 걷어내고 실무 문서 작성과 서식 설계를 돕는 핵심 스킬 모음입니다. 시간을 아껴줍니다.
 
 | 번호 | 스킬명 | 식별자 | 링크 |

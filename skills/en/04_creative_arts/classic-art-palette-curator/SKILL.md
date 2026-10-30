@@ -3,7 +3,7 @@ name: classic-art-palette-curator
 description: Extracts classic fine-art color palettes, compositions, and typography pairings for non-designers building content visuals. Saves you time.
 ---
 
-# Open Museum MCP — Fine-Art Color and Layout Curator
+# Classic Art Palette Curator — Fine-Art Color and Layout Guide
 
 Generates curated 5-color HEX palettes, layout schemes, and typography pairings derived from public domain masterpieces for thumbnails, cards, and web UI. This skill eliminates trial-and-error color picking by mapping your content theme directly to proven historical masterworks.
 
