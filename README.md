@@ -9,7 +9,7 @@
 ## Navigation & Quickstart
 
 Welcome, visitors from Reddit and Twitter! 🚀 
-Explore our curated collection of 41 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
+Explore our curated collection of 42 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
 
 **Quick Navigation:**
 - 🛠️ [**Core Tools**](#00-inspired-by-anthropics-agent-skills-githubcomanthropicsskills)
@@ -36,13 +36,13 @@ skills/
 │   ├── 01_automation/      # 업무 자동화 (8종)
 │   ├── 02_utility/         # 실무 유틸리티 (8종)
 │   ├── 03_gamedev/         # 게임 및 세계관 (9종)
-│   └── 04_creative_arts/   # 창작 및 비주얼 (8종)
+│   └── 04_creative_arts/   # 창작 및 비주얼 (9종)
 └── en/                     # English Version
     ├── 00_core_official/   # Core Tools (8 skills)
     ├── 01_automation/      # Daily Automation (8 skills)
     ├── 02_utility/         # Practical Utilities (8 skills)
     ├── 03_gamedev/         # Game Dev and Worldbuilding (9 skills)
-    └── 04_creative_arts/   # Creative and Visual (8 skills)
+    └── 04_creative_arts/   # Creative and Visual (9 skills)
 ```
 
 ---
@@ -60,7 +60,7 @@ skills/
 | **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to review this draft and strip out passive voice"` |
 
 ### Built-in Guardrail Standards (Bilingual Parity)
-All 41 skills adhere to our standard safety and execution principles across both English and Korean versions:
+All 42 skills adhere to our standard safety and execution principles across both English and Korean versions:
 1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
 2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
 3. **Fact & Constraint Integrity**: Retains original facts, numeric limits, and architectural bounds without unauthorized creative alterations.
@@ -145,10 +145,11 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 | 6 | **Tarot Story Coach** | `narrative-plot-oracle` | [SKILL.md](skills/en/04_creative_arts/narrative-plot-oracle/SKILL.md) |
 | 7 | **Sensory Scene Describer** | `sensory-scene-describer` | [SKILL.md](skills/en/04_creative_arts/sensory-scene-describer/SKILL.md) |
 | 8 | **Visual Prompt Optimizer** | `visual-prompt-optimizer` | [SKILL.md](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
+| 9 | **2.5D Layer Decomposer** | `2.5d-layer-decomposer` | [SKILL.md](skills/en/04_creative_arts/2.5d-layer-decomposer/SKILL.md) |
 
 ### Ecosystem and Related Resources
 
-Additional catalogs and reference registries for expanding beyond these 41 skills:
+Additional catalogs and reference registries for expanding beyond these 42 skills:
 
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): Community collection of Model Context Protocol servers for databases, browser automation, and developer tools.
 - [MCP reference servers](https://github.com/modelcontextprotocol/servers): Official reference implementations for filesystems, Git, database connectors, and memory.
@@ -235,12 +236,13 @@ Additional catalogs and reference registries for expanding beyond these 41 skill
 | 6 | **플롯 전개 타로 가이드** | `narrative-plot-oracle` | [SKILL.md](skills/ko/04_creative_arts/narrative-plot-oracle/SKILL.md) |
 | 7 | **감각적 공간 묘사 가이드** | `sensory-scene-describer` | [SKILL.md](skills/ko/04_creative_arts/sensory-scene-describer/SKILL.md) |
 | 8 | **영문 비주얼 프롬프트 빌더** | `visual-prompt-optimizer` | [SKILL.md](skills/ko/04_creative_arts/visual-prompt-optimizer/SKILL.md) |
+| 9 | **2.5D 캐릭터 레이어 분해기** | `2.5d-layer-decomposer` | [SKILL.md](skills/ko/04_creative_arts/2.5d-layer-decomposer/SKILL.md) |
 
 ---
 
 ### 더 많은 도구와 생태계
 
-기본 41종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
+기본 42종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
 
 - [스킬북 (SkillBook)](https://www.getskillbook.com/) (꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900)): 기획, 문서 작성, 일상 업무에 맞춘 한국어 AI 도구와 프롬프트 모음입니다.
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): 데이터베이스, 브라우저 제어 등 오픈소스 MCP 서버 모음입니다.
