@@ -9,7 +9,7 @@
 ## Navigation & Quickstart
 
 Welcome, visitors from Reddit and Twitter! 🚀 
-Explore our curated collection of 40 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
+Explore our curated collection of 41 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
 
 **Quick Navigation:**
 - 🛠️ [**Core Tools**](#00-inspired-by-anthropics-agent-skills-githubcomanthropicsskills)
@@ -35,13 +35,13 @@ skills/
 │   ├── 00_core_official/   # Anthropic Agent Skills 참고 (8종)
 │   ├── 01_automation/      # 업무 자동화 (8종)
 │   ├── 02_utility/         # 실무 유틸리티 (8종)
-│   ├── 03_gamedev/         # 게임 및 세계관 (8종)
+│   ├── 03_gamedev/         # 게임 및 세계관 (9종)
 │   └── 04_creative_arts/   # 창작 및 비주얼 (8종)
 └── en/                     # English Version
     ├── 00_core_official/   # Core Tools (8 skills)
     ├── 01_automation/      # Daily Automation (8 skills)
     ├── 02_utility/         # Practical Utilities (8 skills)
-    ├── 03_gamedev/         # Game Dev and Worldbuilding (8 skills)
+    ├── 03_gamedev/         # Game Dev and Worldbuilding (9 skills)
     └── 04_creative_arts/   # Creative and Visual (8 skills)
 ```
 
@@ -60,7 +60,7 @@ skills/
 | **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to review this draft and strip out passive voice"` |
 
 ### Built-in Guardrail Standards (Bilingual Parity)
-All 40 skills adhere to our standard safety and execution principles across both English and Korean versions:
+All 41 skills adhere to our standard safety and execution principles across both English and Korean versions:
 1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
 2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
 3. **Fact & Constraint Integrity**: Retains original facts, numeric limits, and architectural bounds without unauthorized creative alterations.
@@ -130,6 +130,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 | 6 | **Text TRPG & Interactive Fiction Engine** | `interactive-fiction-helper` | [SKILL.md](skills/en/03_gamedev/interactive-fiction-helper/SKILL.md) |
 | 7 | **RPG Maker XP Event Builder** | `rpg-dialogue-formatter` | [SKILL.md](skills/en/03_gamedev/rpg-dialogue-formatter/SKILL.md) |
 | 8 | **DnD Oracle** | `ttrpg-encounter-helper` | [SKILL.md](skills/en/03_gamedev/ttrpg-encounter-helper/SKILL.md) |
+| 9 | **Procedural Pixel FX & Action Choreographer** | `pixelfx` | [SKILL.md](skills/en/03_gamedev/pixelfx/SKILL.md) |
 
 ### 04. Creative and Visual Content (Design and Media)
 > Utilities for SVG icons, moodboard palettes, visual prompt optimization, and sensory lexicons to save you time.
@@ -147,7 +148,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 
 ### Ecosystem and Related Resources
 
-Additional catalogs and reference registries for expanding beyond these 40 skills:
+Additional catalogs and reference registries for expanding beyond these 41 skills:
 
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): Community collection of Model Context Protocol servers for databases, browser automation, and developer tools.
 - [MCP reference servers](https://github.com/modelcontextprotocol/servers): Official reference implementations for filesystems, Git, database connectors, and memory.
@@ -219,6 +220,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 | 6 | **텍스트 TRPG 시나리오 보조** | `interactive-fiction-helper` | [SKILL.md](skills/ko/03_gamedev/interactive-fiction-helper/SKILL.md) |
 | 7 | **RPG 메이커 퀘스트 이벤트 생성기** | `rpg-dialogue-formatter` | [SKILL.md](skills/ko/03_gamedev/rpg-dialogue-formatter/SKILL.md) |
 | 8 | **즉흥 TRPG 인카운터 생성기** | `ttrpg-encounter-helper` | [SKILL.md](skills/ko/03_gamedev/ttrpg-encounter-helper/SKILL.md) |
+| 9 | **픽셀 아트 VFX & 타격감 생성기** | `pixelfx` | [SKILL.md](skills/ko/03_gamedev/pixelfx/SKILL.md) |
 
 ### 04. 창작 및 비주얼 (Creative and Visual Content)
 > SVG 아이콘, 무드보드 배색, 프롬프트 최적화 등 시각 콘텐츠 제작의 고민.
@@ -238,7 +240,7 @@ Additional catalogs and reference registries for expanding beyond these 40 skill
 
 ### 더 많은 도구와 생태계
 
-기본 40종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
+기본 41종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
 
 - [스킬북 (SkillBook)](https://www.getskillbook.com/) (꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900)): 기획, 문서 작성, 일상 업무에 맞춘 한국어 AI 도구와 프롬프트 모음입니다.
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): 데이터베이스, 브라우저 제어 등 오픈소스 MCP 서버 모음입니다.
