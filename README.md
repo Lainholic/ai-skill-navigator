@@ -259,6 +259,8 @@ Additional catalogs and reference registries for expanding beyond these 42 skill
   - punkpeye/awesome-mcp-servers
   - f/awesome-chatgpt-prompts
   - openai/openai-cookbook
+  - [patch-gg/pixelfx](https://github.com/patch-gg/pixelfx) (Hugo Duprez / Sprite Fusion, MIT)
+  - [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) (ACM SIGGRAPH 2026, Apache-2.0)
 
 ---
 
@@ -271,3 +273,4 @@ All product names, logos, brands, and registered trademarks mentioned or referen
 ## License
 
 Released under the MIT License.
+Individual skills and the third-party tools they reference retain their respective upstream licenses (e.g., Apache-2.0, MIT).
