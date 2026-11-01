@@ -1,22 +1,21 @@
 ---
 name: 2.5d-layer-decomposer
-description: 2D 애니메이션 일러스트를 Live2D 및 2.5D 모션용 23개 표준 레이어 계층 구조와 가려진 부위 인페인팅 명세로 자동 분해합니다.
+description: 2D 캐릭터 일러스트를 Live2D 및 2.5D 모션 작업을 위한 23단계 레이어 구조와 가림 영역 보완 계획으로 정리합니다.
 license: MIT
 compatibility: Universal AI Agent, ComfyUI, Photoshop PSD, Live2D Cubism, Spine, PNGAL
 ---
 
 # 2.5D 캐릭터 레이어 분해기 — Single-Image 2.5D Layer Decomposition & Inpainting Spec
 
-단 한 장의 2D 캐릭터 일러스트를 Live2D, 버튜버 아바타, 2.5D 게임 모션에 즉시 투입할 수 있도록 최대 23개의 표준 시맨틱 레이어(Z-Index 뎁스 순서, 부모-자식 트리)로 분해하고, 머리카락 뒤 얼굴이나 옷 속 살결 등 가려진 부위(Occlusion)의 인페인팅 가이드라인을 자동 도출합니다.
+2D 캐릭터 일러스트를 Live2D 및 2.5D 애니메이션에 활용할 수 있도록 23단계 레이어 분해 계획과 가려진 부위(머리카락 뒤 안면, 옷 속 살결 등)의 인페인팅 가이드라인을 도출합니다.
 
 - **기반 연구**: ACM SIGGRAPH 2026 논문 [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) (Apache-2.0)
-- **로컬 가속 엔진**: Rust/C++ 네이티브 런타임 [ling0322/libwaifu](https://github.com/ling0322/libwaifu) (MIT)
 - **모션 호환 규격**: Live2D Cubism, Spine, [PNGAL](https://github.com/1mm-module/PNGAL), Anime2.5DRig
 
 ---
 
 ### 1. 작동 규칙
-- **사설 없는 초안 우선 출력**: 불필요한 설명 없이 즉시 복사 가능한 23개 레이어 계층 트리 및 인페인팅 명세서 출력.
+- **사설 없는 초안 우선 출력**: 불필요한 설명 없이 23개 레이어 계층 목록 및 인페인팅 명세서 출력.
 - **후면 우선 뎁스 정렬(Back-to-Front)**: 배경/뒷머리부터 눈동자, 앞머리, 장신구까지 엄격한 Z-Index 순서 준수.
 - **가림 영역 인페인팅(Inpainting) 필수 지정**: 레이어가 흔들리거나 눈을 깜빡일 때 빈 공간(구멍)이 생기지 않도록 가려진 안쪽 살/헤어 텍스처 확장 가이드 제공.
 
@@ -64,7 +63,7 @@ compatibility: Universal AI Agent, ComfyUI, Photoshop PSD, Live2D Cubism, Spine,
 
 **실제로 레이어를 뽑는 방법 (원작 See-through)**
 - 위 23단계 목록은 작업 계획용 자체 분류입니다. 원작 결과물의 레이어 이름은 `front hair`, `back hair`, `face`, `eyewhite`, `irides`, `eyelash`, `eyebrow`, `ears`, `nose`, `mouth`, `topwear`, `bottomwear`, `handwear` 같은 영문 이름입니다.
-- **설치 없이 (입문자 추천)**: 원작 공식 온라인 데모 [see-through-demo](https://huggingface.co/spaces/24yearsold/see-through-demo)에 그림을 올리면 PSD로 받을 수 있습니다. Hugging Face 무료 가입이 필요하고, 하루 1~2회, 1회 약 2~3분 걸립니다.
+- **설치 없이 (입문자 추천)**: 원작 공식 온라인 데모 [see-through-demo](https://huggingface.co/spaces/24yearsold/see-through-demo)에 그림을 올려 PSD로 추출할 수 있습니다. (Hugging Face 계정 필요, 무료 ZeroGPU 쿼터 기반. 미공개 작업물이나 저작권 보호가 필요한 이미지는 서비스 공개 범위를 확인 후 이용하십시오.)
 - **직접 설치 (NVIDIA GPU, 데모가 닫혔을 때)**: [원작 README](https://github.com/shitagaki-lab/see-through)의 설치 절차를 마친 뒤 아래 명령을 실행합니다.
 
 ```bash
@@ -74,8 +73,8 @@ python inference/scripts/inference_psd.py --srcp my_character.png --save_to_psd
 ---
 
 ### 3. 안내
-- 일러스트레이터가 수작업으로 며칠씩 분해하던 Live2D 준비 과정을 단 몇 분 만에 기획·구조화합니다.
-- 추출된 레이어는 포토샵(PSD) 및 클립스튜디오에서 즉시 호환되며, Live2D Cubism 모델러로 바로 불러올 수 있습니다.
+- 일러스트레이터의 Live2D 준비 과정을 단축하기 위한 레이어 분해 기획 가이드입니다.
+- 추출된 PSD 레이어는 포토샵, 클립스튜디오, Live2D Cubism 모델러로 가져와 리깅 준비를 진행할 수 있습니다. (실제 모델 완성을 위해서는 메쉬 생성 및 수작업 디포머 설정이 필요합니다.)
 
 ---
 

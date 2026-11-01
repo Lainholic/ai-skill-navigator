@@ -15,7 +15,7 @@ compatibility: Node 18+, Canvas/WebGL (Phaser, PixiJS, Three.js), Game Engines (
 ---
 
 ### 1. 작동 규칙
-- **사설 없는 초안 우선 출력**: 불필요한 설명 없이 즉시 복사 가능한 게임 코드(JS) 또는 이펙트 정의 스크립트 출력.
+- **사설 없는 초안 우선 출력**: 불필요한 설명 없이 프로젝트에 적용 가능한 게임 코드(JS) 또는 이펙트 스크립트 출력.
 - **2중 버퍼 및 절차적 렌더링**: 무거운 PNG 텍스처 대신 수학적 파티클 및 4x4 베이어 디더링, 발광 레이어 연산 활용.
 - **타격감(Acting) 데이터 결합**: 공격 모션과 이펙트 싱크를 위한 선딜(windup), 타격 멈춤(hit freeze), 넉백(push), 화면 진동(shake) 타이밍 명시.
 
@@ -24,38 +24,44 @@ compatibility: Node 18+, Canvas/WebGL (Phaser, PixiJS, Three.js), Game Engines (
 ### 2. 출력 포맷
 
 ```javascript
-// [카테고리/이펙트명]: 예) melee/sword-slash 또는 arcane/frost-nova
+// [Canvas 2D 연동 기본 골격 예시: ice/frost-nova]
+// WebGL, PixiJS, Three.js 환경에서는 합성된 프레임 데이터를 텍스처로 업로드하여 사용합니다.
 import { createFrame, clearFrame, createAct, composite } from "pixelfx";
-import * as effect from "pixelfx/fx/[category]/[effect-name]";
+import * as effect from "pixelfx/fx/ice/frost-nova"; // 원하는 이펙트 모듈
 
-// 1. 타격감 액트(Act) 초기화 (캐릭터 선딜 + 피격 정지 + 카메라 쉐이크 포함)
+// 1. 캔버스 및 버퍼 초기화
+const width = 320, height = 180;
+const frame = createFrame(width, height);
+const imgData = ctx.createImageData(width, height);
+
+// 2. 타격감 액트(Act) 초기화 (캐릭터 선딜 + 피격 정지 + 카메라 쉐이크 포함)
 const act = createAct(effect, {
-  x: targetX,
-  y: targetY,
-  flip: isFacingLeft,
-  palette: ["#102", "#215", "#43a", "#8cf", "#fff"], // 커스텀 컬러 램프
+  x: 160,
+  y: 120,
+  flip: false,
+  palette: ["#102", "#215", "#43a", "#8cf", "#fff"], // 컬러 램프
   light: 1.0 // 발광 강도 (0.0 ~ 2.0)
 });
 
-// 2. 게임 루프 틱 (Canvas / Phaser / PixiJS / Three.js 공통)
+// 3. 게임 루프 틱 (dt: 초 단위 델타 타임)
 function updateGame(dt) {
   act.update(dt);
   clearFrame(frame);
-  act.draw(frame); // 피격자 및 공격자 레이어 렌더링
-  composite(frame, imgData.data, backgroundColor);
+  act.draw(frame); // 이펙트 및 시연 캐릭터 레이어 렌더링
+  composite(frame, imgData.data, backgroundColor); // 배경색과 라이트 버퍼 합성
   
-  // 카메라 쉐이크 적용
+  // 카메라 쉐이크 오프셋 적용
   const [shakeX, shakeY] = act.shake;
   ctx.putImageData(imgData, screenX + shakeX, screenY + shakeY);
 }
 ```
 
 ```bash
-# Godot, Unity, GameMaker용 스프라이트 시트(Aseprite JSON 호환) 내보내기 CLI
-node tools/render.mjs [category]/[effect-name] --sheet
+# 이펙트 전용 스프라이트 시트(Aseprite JSON 호환) 내보내기 CLI
+node tools/render.mjs ice/frost-nova --sheet
 
-# 캐릭터 선딜·피격 정지(타격감)까지 포함한 시트
-node tools/act.mjs [category]/[effect-name] --sheet
+# 캐릭터 선딜·피격 정지(타격감)까지 포함한 스프라이트 시트 내보내기
+node tools/act.mjs melee/sword-slash --sheet
 ```
 
 ---
@@ -68,8 +74,8 @@ node tools/act.mjs [category]/[effect-name] --sheet
 ---
 
 ### 4. 안내
-- 웹 브라우저 게임(HTML5 Canvas)에서는 외부 에셋 다운로드 없이 순수 JS로 0.1초 만에 로딩됩니다.
-- 유니티나 고도 엔진에서는 `tools/render.mjs`를 통해 투명 배경 PNG 스프라이트 시트 및 JSON 메타데이터로 즉시 변환 가능합니다.
+- 웹 브라우저 게임(HTML5 Canvas)에서는 외부 에셋 다운로드 없이 순수 자바스크립트 연산으로 가볍게 로딩됩니다.
+- 유니티나 고도 엔진에서는 `tools/render.mjs` 및 `tools/act.mjs`를 통해 투명 배경 PNG 스프라이트 시트 및 JSON 메타데이터로 변환하여 임포트할 수 있습니다.
 
 ---
 

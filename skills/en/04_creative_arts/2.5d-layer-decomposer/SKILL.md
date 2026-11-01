@@ -1,22 +1,21 @@
 ---
 name: 2.5d-layer-decomposer
-description: Decomposes 2D anime illustrations into 23 standard Live2D / 2.5D animation layers with occlusion inpainting specifications.
+description: Organizes 2D character illustrations into a 23-layer breakdown plan and occlusion filling guidelines for Live2D and 2.5D animation.
 license: MIT
 compatibility: Universal AI Agent, ComfyUI, Photoshop PSD, Live2D Cubism, Spine, PNGAL
 ---
 
 # 2.5D Layer Decomposer — Anime Character Layer Decomposition & Inpainting Spec
 
-Automates the architectural breakdown of static 2D anime illustrations into manipulatable 2.5D models across up to 23 semantically distinct layers with inferred depth and drawing orders. Formulates occlusion inpainting directives (e.g., face skin behind bangs, eyeballs behind eyelids) to prevent visual tears during Live2D rigging, VTuber avatar setup, and 2.5D sprite animation.
+Generates structured layer decomposition plans and occlusion inpainting guidelines (e.g., face skin behind bangs, torso under collar) to prepare 2D character illustrations for Live2D and 2.5D animation workflows.
 
 - **Scientific Foundation**: ACM SIGGRAPH 2026 paper [shitagaki-lab/see-through](https://github.com/shitagaki-lab/see-through) (Apache-2.0)
-- **Native Engine**: Rust/C++ high-performance runtime [ling0322/libwaifu](https://github.com/ling0322/libwaifu) (MIT)
 - **Rigging Conventions**: Live2D Cubism, Spine, [PNGAL](https://github.com/1mm-module/PNGAL), Anime2.5DRig
 
 ---
 
 ### 1. Operating Rules
-- **Draft First**: Outputs clean, actionable 23-layer hierarchy manifests and inpainting boundary directives immediately without conversational filler.
+- **Draft First**: Outputs clean, actionable 23-layer planning manifests and inpainting boundary directives immediately without conversational filler.
 - **Back-to-Front Depth Ordering**: Adheres strictly to visual Z-index layers from background aura and back hair through facial features and frontal bangs.
 - **Occlusion Extension Inpainting**: Specifies mandatory extension regions (neck under collar, full sclera ellipse behind lids) so movement never exposes hollow voids.
 
@@ -64,7 +63,7 @@ Automates the architectural breakdown of static 2D anime illustrations into mani
 
 **How to actually extract the layers (upstream See-through)**
 - The 23-layer list above is a planning scheme of our own. Upstream output uses English layer names such as `front hair`, `back hair`, `face`, `eyewhite`, `irides`, `eyelash`, `eyebrow`, `ears`, `nose`, `mouth`, `topwear`, `bottomwear` and `handwear`.
-- **No install (recommended for beginners)**: upload a picture to the official online demo [see-through-demo](https://huggingface.co/spaces/24yearsold/see-through-demo) and download the PSD. Requires a free Hugging Face account; about 1–2 runs per day, 2–3 minutes each.
+- **No install (recommended for beginners)**: upload a picture to the official online demo [see-through-demo](https://huggingface.co/spaces/24yearsold/see-through-demo) to extract PSD layers. (Requires a free Hugging Face account with ZeroGPU quota. Check the service terms before uploading private or copyrighted assets.)
 - **Local install (NVIDIA GPU, or if the demo is down)**: follow the setup in the [upstream README](https://github.com/shitagaki-lab/see-through), then run:
 
 ```bash
@@ -74,8 +73,8 @@ python inference/scripts/inference_psd.py --srcp my_character.png --save_to_psd
 ---
 
 ### 3. User Notes
-- Cuts down days of manual Photoshop pen-tool extraction into minutes of structured planning.
-- Layers seamlessly export to Photoshop PSD, Clip Studio Paint, or directly into Live2D Cubism Modeler.
+- Formulates practical layer planning guidelines to speed up Live2D character preparation.
+- Extracted PSD layers can be opened in Photoshop, Clip Studio, or imported into Live2D Cubism Modeler for rigging. (Complete model production still requires manual mesh creation and deformer setup.)
 
 ---
 

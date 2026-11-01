@@ -15,7 +15,7 @@ Generates and configures 244 procedural pixel art VFX (fire, ice, lightning, sla
 ---
 
 ### 1. Operating Rules
-- **Draft First**: Delivers clean, ready-to-run JavaScript implementation code or export commands immediately without introductory fluff.
+- **Draft First**: Delivers clean, practical integration code or CLI export commands immediately without introductory fluff.
 - **Dual-Buffer Rendering**: Employs mathematical particles, 4x4 Bayer dithered alpha, and additive glow buffers instead of heavy bitmap textures.
 - **Action Choreography**: Integrates punchy hit timing data: wind-up, hit freeze (0.14s), target pushback, and screen shake.
 
@@ -24,38 +24,44 @@ Generates and configures 244 procedural pixel art VFX (fire, ice, lightning, sla
 ### 2. Output Template
 
 ```javascript
-// [Category/Effect]: e.g., melee/sword-slash or ice/frost-nova
+// [Canvas 2D Integration Template: ice/frost-nova]
+// For WebGL, PixiJS, or Three.js, upload composited frame buffers to textures.
 import { createFrame, clearFrame, createAct, composite } from "pixelfx";
-import * as effect from "pixelfx/fx/[category]/[effect-name]";
+import * as effect from "pixelfx/fx/ice/frost-nova"; // Target effect module
 
-// 1. Initialize choreography act (Wind-up + Hit Freeze + Shake)
+// 1. Initialize canvas buffers
+const width = 320, height = 180;
+const frame = createFrame(width, height);
+const imgData = ctx.createImageData(width, height);
+
+// 2. Initialize choreography act (Wind-up + Hit Freeze + Shake)
 const act = createAct(effect, {
-  x: targetX,
-  y: targetY,
-  flip: isFacingLeft,
-  palette: ["#102", "#215", "#43a", "#8cf", "#fff"], // Custom color ramp
+  x: 160,
+  y: 120,
+  flip: false,
+  palette: ["#102", "#215", "#43a", "#8cf", "#fff"], // Color ramp
   light: 1.0 // Glow intensity
 });
 
-// 2. Game loop tick (Canvas / Phaser / PixiJS / Three.js)
+// 3. Game loop tick (dt: delta time in seconds)
 function tick(dt) {
   act.update(dt);
   clearFrame(frame);
   act.draw(frame); // Renders actor, effect, and target layers
-  composite(frame, imgData.data, backgroundColor);
+  composite(frame, imgData.data, backgroundColor); // Composite onto background
   
-  // Apply screen shake
+  // Apply screen shake offset
   const [shakeX, shakeY] = act.shake;
   ctx.putImageData(imgData, screenX + shakeX, screenY + shakeY);
 }
 ```
 
 ```bash
-# Export to Sprite Sheet + JSON for Unity / Godot / GameMaker
-node tools/render.mjs [category]/[effect-name] --sheet
+# Export effect sprite sheet + JSON for Unity / Godot / GameMaker
+node tools/render.mjs ice/frost-nova --sheet
 
-# Include the character's wind-up and hit freeze (acting) in the sheet
-node tools/act.mjs [category]/[effect-name] --sheet
+# Export complete choreography act (including actor wind-up and hit freeze)
+node tools/act.mjs melee/sword-slash --sheet
 ```
 
 ---
@@ -68,8 +74,8 @@ node tools/act.mjs [category]/[effect-name] --sheet
 ---
 
 ### 4. User Notes
-- Runs natively on lightweight web games with 0ms asset download overhead.
-- Easily exported into standardized sprite sheets (`contact.png` + `effect.json`) for desktop and mobile engines.
+- Runs natively on lightweight web games without external texture asset downloads.
+- Easily exported into standardized sprite sheets (`effect.png` + `effect.json`) for desktop and mobile engines.
 
 ---
 
