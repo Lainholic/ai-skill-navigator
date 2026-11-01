@@ -9,7 +9,7 @@
 ## Navigation & Quickstart
 
 Welcome, visitors from Reddit and Twitter! 🚀 
-Explore our curated collection of 42 AI agent skills (`SKILL.md`) available in both English and Korean, designed to provide ready-to-use drafts directly and save you time.
+Explore our curated collection of 43 AI agent skills (`SKILL.md`) available in both English and Korean, including practical guides and ready-to-use tools.
 
 **Quick Navigation:**
 - 🛠️ [**Core Tools**](#00-inspired-by-anthropics-agent-skills-githubcomanthropicsskills)
@@ -34,13 +34,13 @@ skills/
 ├── ko/                     # 한국어 전용 스킬
 │   ├── 00_core_official/   # Anthropic Agent Skills 참고 (8종)
 │   ├── 01_automation/      # 업무 자동화 (8종)
-│   ├── 02_utility/         # 실무 유틸리티 (8종)
+│   ├── 02_utility/         # 실무 유틸리티 (9종)
 │   ├── 03_gamedev/         # 게임 및 세계관 (9종)
 │   └── 04_creative_arts/   # 창작 및 비주얼 (9종)
 └── en/                     # English Version
     ├── 00_core_official/   # Core Tools (8 skills)
     ├── 01_automation/      # Daily Automation (8 skills)
-    ├── 02_utility/         # Practical Utilities (8 skills)
+    ├── 02_utility/         # Practical Utilities (9 skills)
     ├── 03_gamedev/         # Game Dev and Worldbuilding (9 skills)
     └── 04_creative_arts/   # Creative and Visual (9 skills)
 ```
@@ -60,7 +60,7 @@ skills/
 | **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to review this draft and strip out passive voice"` |
 
 ### Built-in Guardrail Standards (Bilingual Parity)
-All 42 skills adhere to our standard safety and execution principles across both English and Korean versions:
+All 43 skills follow our standard safety and execution principles across both English and Korean versions:
 1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
 2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
 3. **Fact & Constraint Integrity**: Retains original facts, numeric limits, and architectural bounds without unauthorized creative alterations.
@@ -73,7 +73,17 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 ### How to Use
 1. Select a skill from `skills/en/<category>/<skill-name>/SKILL.md`.
 2. Copy its contents into your system prompt, or place the skill directory into your AI workspace.
-3. The skill provides an immediate working draft without extra installation steps.
+3. Ask the agent to use the selected skill for your task. The AI Meeting Room skill directs the agent to write a custom program or run the included zero-dependency reference app in `examples/`.
+
+### AI Meeting Room
+
+Ask your AI agent to build a meeting room where several AIs discuss a topic and you can join in. The skill describes participant selection, rounds, automatic or user-guided discussion, summaries, cost estimates, and transcript export.
+
+![English AI Meeting Room screenshot in test mode](assets/ai-meeting-room-test-en.png)
+
+This screenshot shows an earlier prototype in test mode; its messages are simulated. It is an example, not a guarantee that a newly generated app will look identical. The English skill requests an English interface. Actual provider usage may incur charges, and cost estimates depend on usage data and rates.
+
+To use it, add the [English skill](skills/en/02_utility/ai-meeting-room/SKILL.md) to your agent and ask it to build an AI meeting room, or run the ready-made reference app in `examples/` directly. Enter API keys directly into the application, not into the agent chat.
 
 ### 00. Inspired by Anthropic's Agent Skills ([github.com/anthropics/skills](https://github.com/anthropics/skills))
 > Essential document and layout creation tools streamlined for direct productivity.
@@ -116,6 +126,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 | 6 | **Prompt Quality Audit Checklist** | `skill-validation-checklist` | [SKILL.md](skills/en/02_utility/skill-validation-checklist/SKILL.md) |
 | 7 | **Social Thread Splitter** | `social-thread-formatter` | [SKILL.md](skills/en/02_utility/social-thread-formatter/SKILL.md) |
 | 8 | **Thread Noise Reducer** | `thread-meeting-summarizer` | [SKILL.md](skills/en/02_utility/thread-meeting-summarizer/SKILL.md) |
+| 9 | **AI Meeting Room Builder** | `ai-meeting-room` | [SKILL.md](skills/en/02_utility/ai-meeting-room/SKILL.md) |
 
 ### 03. Game Dev and Worldbuilding (Narrative and Mechanics)
 > Assists creators with game balance, encounter outlines, quest structures, and dialogue formatting to save you time.
@@ -149,7 +160,7 @@ See [`GUARDRAILS.md`](GUARDRAILS.md) for the universal specification.
 
 ### Ecosystem and Related Resources
 
-Additional catalogs and reference registries for expanding beyond these 42 skills:
+Additional catalogs and reference registries for expanding beyond these 43 skills:
 
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): Community collection of Model Context Protocol servers for databases, browser automation, and developer tools.
 - [MCP reference servers](https://github.com/modelcontextprotocol/servers): Official reference implementations for filesystems, Git, database connectors, and memory.
@@ -164,7 +175,17 @@ Additional catalogs and reference registries for expanding beyond these 42 skill
 ### 사용 방법
 1. 필요한 도구를 `skills/ko/<카테고리>/<스킬이름>/SKILL.md`에서 확인합니다.
 2. 시스템 프롬프트 또는 에이전트 지침 폴더에 복사해 넣습니다.
-3. 별도 설치 없이 즉시 작동하여 작업.
+3. 각 스킬의 안내에 따라 에이전트에게 작업을 요청합니다. AI 회의실 스킬은 맞춤형 프로그램 제작 지침과 함께 즉시 실행 가능한 `examples/` 예시 앱을 포함합니다.
+
+### AI 회의실
+
+사용자의 AI에게 여러 AI가 한 주제로 대화하고 사람이 직접 참여할 수 있는 회의실 프로그램 제작을 요청하는 스킬입니다. 참여자·턴 수 선택, 자동 또는 직접 진행, 요약, 비용 추정과 회의록 저장을 제작 요구사항으로 안내합니다.
+
+![테스트 모드에서 실행한 AI 회의실 화면](assets/ai-meeting-room-test.png)
+
+위 화면은 앞서 만든 시제품의 테스트 모드이며 발언은 모의 응답입니다. 새로 제작되는 프로그램은 이 화면과 다를 수 있습니다. 한국어 스킬은 한국어 화면 제작을 안내합니다. 실제 AI를 사용하면 제공사 사용료가 발생할 수 있으며 비용 추정액은 사용량과 단가에 따라 달라집니다.
+
+[한국어 스킬](skills/ko/02_utility/ai-meeting-room/SKILL.md)을 에이전트에 추가한 뒤 AI 회의실 제작을 요청하거나, 동봉된 `examples/` 예시 앱을 바로 실행하세요. API 키는 에이전트 채팅창이 아닌 프로그램에 직접 입력합니다.
 
 ### 00. Inspired by Anthropic's Agent Skills ([github.com/anthropics/skills](https://github.com/anthropics/skills))
 > 불필요한 기술 설정을 걷어내고 실무 문서 작성과 서식 설계를 돕는 핵심 스킬 모음입니다.
@@ -207,6 +228,7 @@ Additional catalogs and reference registries for expanding beyond these 42 skill
 | 6 | **프롬프트 검수 체크리스트** | `skill-validation-checklist` | [SKILL.md](skills/ko/02_utility/skill-validation-checklist/SKILL.md) |
 | 7 | **소셜 스레드 분할기** | `social-thread-formatter` | [SKILL.md](skills/ko/02_utility/social-thread-formatter/SKILL.md) |
 | 8 | **업무 스레드 및 회의록 정리기** | `thread-meeting-summarizer` | [SKILL.md](skills/ko/02_utility/thread-meeting-summarizer/SKILL.md) |
+| 9 | **AI 회의실 제작 스킬** | `ai-meeting-room` | [SKILL.md](skills/ko/02_utility/ai-meeting-room/SKILL.md) |
 
 ### 03. 게임 및 세계관 (Game Dev and Worldbuilding)
 > TRPG 룰, 수치 밸런스, 퀘스트 구조화 등 창작자의 기초 설계.
@@ -242,7 +264,7 @@ Additional catalogs and reference registries for expanding beyond these 42 skill
 
 ### 더 많은 도구와 생태계
 
-기본 42종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
+기본 43종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
 
 - [스킬북 (SkillBook)](https://www.getskillbook.com/) (꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900)): 기획, 문서 작성, 일상 업무에 맞춘 한국어 AI 도구와 프롬프트 모음입니다.
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): 데이터베이스, 브라우저 제어 등 오픈소스 MCP 서버 모음입니다.
