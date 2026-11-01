@@ -27,7 +27,7 @@ compatibility: Universal AI Agent, ComfyUI, Photoshop PSD, Live2D Cubism, Spine,
 ```markdown
 # 2.5D 레이어 분해 명세서: [캐릭터/작업명]
 
-### 1. 23단계 표준 레이어 계층 트리 (후면 → 전면 순서)
+### 1. 23단계 작업용 레이어 계층 트리 (자체 분류, 후면 → 전면 순서)
 [배경 및 아우라]
 - 01_bg_glow          : 배경 발광, 파티클, 후광
 - 02_hair_back        : 뒷머리 전체, 포니테일 베이스
@@ -62,9 +62,13 @@ compatibility: Universal AI Agent, ComfyUI, Photoshop PSD, Live2D Cubism, Spine,
 - 23_accessories_top  : 안경, 머리핀, 리본, 모자, 떠 있는 소품
 ```
 
+**실제로 레이어를 뽑는 방법 (원작 See-through)**
+- 위 23단계 목록은 작업 계획용 자체 분류입니다. 원작 결과물의 레이어 이름은 `front hair`, `back hair`, `face`, `eyewhite`, `irides`, `eyelash`, `eyebrow`, `ears`, `nose`, `mouth`, `topwear`, `bottomwear`, `handwear` 같은 영문 이름입니다.
+- **설치 없이 (입문자 추천)**: 원작 공식 온라인 데모 [see-through-demo](https://huggingface.co/spaces/24yearsold/see-through-demo)에 그림을 올리면 PSD로 받을 수 있습니다. Hugging Face 무료 가입이 필요하고, 하루 1~2회, 1회 약 2~3분 걸립니다.
+- **직접 설치 (NVIDIA GPU, 데모가 닫혔을 때)**: [원작 README](https://github.com/shitagaki-lab/see-through)의 설치 절차를 마친 뒤 아래 명령을 실행합니다.
+
 ```bash
-# 로컬 GPU에서 libwaifu CLI로 1초 만에 PSD 레이어 자동 추출
-waifu-cli img2layers --input input.png --output layers.psd --device cuda
+python inference/scripts/inference_psd.py --srcp my_character.png --save_to_psd
 ```
 
 ---

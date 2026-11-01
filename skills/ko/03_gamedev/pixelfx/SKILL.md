@@ -53,6 +53,9 @@ function updateGame(dt) {
 ```bash
 # Godot, Unity, GameMaker용 스프라이트 시트(Aseprite JSON 호환) 내보내기 CLI
 node tools/render.mjs [category]/[effect-name] --sheet
+
+# 캐릭터 선딜·피격 정지(타격감)까지 포함한 시트
+node tools/act.mjs [category]/[effect-name] --sheet
 ```
 
 ---

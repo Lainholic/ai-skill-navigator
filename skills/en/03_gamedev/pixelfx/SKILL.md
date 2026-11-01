@@ -53,6 +53,9 @@ function tick(dt) {
 ```bash
 # Export to Sprite Sheet + JSON for Unity / Godot / GameMaker
 node tools/render.mjs [category]/[effect-name] --sheet
+
+# Include the character's wind-up and hit freeze (acting) in the sheet
+node tools/act.mjs [category]/[effect-name] --sheet
 ```
 
 ---

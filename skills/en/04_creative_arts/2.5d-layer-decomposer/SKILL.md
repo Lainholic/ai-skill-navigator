@@ -27,7 +27,7 @@ Automates the architectural breakdown of static 2D anime illustrations into mani
 ```markdown
 # 2.5D Layer Decomposition Spec: [Character/Asset Name]
 
-### 1. Standard 23-Layer Depth Tree (Back to Front)
+### 1. 23-Layer Working Depth Tree (Own Planning Scheme, Back to Front)
 [Backdrop & Ambience]
 - 01_bg_glow          : Aura particles, ambient glow, back halo
 - 02_hair_back        : Full rear hair volume, ponytail base
@@ -62,9 +62,13 @@ Automates the architectural breakdown of static 2D anime illustrations into mani
 - 23_accessories_top  : Glasses, ribbons, hat, floating hairpin
 ```
 
+**How to actually extract the layers (upstream See-through)**
+- The 23-layer list above is a planning scheme of our own. Upstream output uses English layer names such as `front hair`, `back hair`, `face`, `eyewhite`, `irides`, `eyelash`, `eyebrow`, `ears`, `nose`, `mouth`, `topwear`, `bottomwear` and `handwear`.
+- **No install (recommended for beginners)**: upload a picture to the official online demo [see-through-demo](https://huggingface.co/spaces/24yearsold/see-through-demo) and download the PSD. Requires a free Hugging Face account; about 1–2 runs per day, 2–3 minutes each.
+- **Local install (NVIDIA GPU, or if the demo is down)**: follow the setup in the [upstream README](https://github.com/shitagaki-lab/see-through), then run:
+
 ```bash
-# Decompose single illustration to PSD via local GPU engine
-waifu-cli img2layers --input character.png --output layers.psd --device cuda
+python inference/scripts/inference_psd.py --srcp my_character.png --save_to_psd
 ```
 
 ---
