@@ -57,4 +57,4 @@ Converts raw user intent into production-grade SKILL.md specifications without r
 > 2. **Input Material**: What specific data, text, or parameters will be provided? (e.g., Zoom raw transcripts)
 > 3. **Expected Output**: What exact structure or template must the response follow? (e.g., Markdown checklist grouped by assignee)
 > 
-> *Please reply to these 3 questions, and I will generate your `SKILL.md` immediately.*
+> Please reply to these 3 questions, and I will generate your `SKILL.md` immediately.

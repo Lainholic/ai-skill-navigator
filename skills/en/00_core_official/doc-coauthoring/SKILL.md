@@ -53,4 +53,4 @@ Guides creators from raw concept to finished text through sequential, step-by-st
 **Expected Output (Stage 1 - Scope):**
 > Great! To get started, please provide exactly 3 core keywords and describe your target audience intent. 
 > 
-> *Example response: "rate-limits, fair-use, headers / Target audience: backend developers integrating our API"*
+> Example response: "rate-limits, fair-use, headers / Target audience: backend developers integrating our API."
