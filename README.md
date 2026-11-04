@@ -9,7 +9,7 @@
 ## Navigation & Quickstart
 
 Welcome, visitors from Reddit and Twitter! 🚀 
-Explore our curated collection of 43 AI agent skills (`SKILL.md`) available in both English and Korean, including practical guides and ready-to-use tools.
+Explore our curated collection of 44 AI agent skills (`SKILL.md`) available in both English and Korean, including practical guides and ready-to-use tools.
 
 **Quick Navigation:**
 - 🛠️ [**Core Tools**](#00-inspired-by-anthropics-agent-skills-githubcomanthropicsskills)
@@ -32,13 +32,13 @@ Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
 ```
 skills/
 ├── ko/                     # 한국어 전용 스킬
-│   ├── 00_core_official/   # Anthropic Agent Skills 참고 (8종)
+│   ├── 00_core_official/   # Anthropic Agent Skills 참고 (9종)
 │   ├── 01_automation/      # 업무 자동화 (8종)
 │   ├── 02_utility/         # 실무 유틸리티 (9종)
 │   ├── 03_gamedev/         # 게임 및 세계관 (9종)
 │   └── 04_creative_arts/   # 창작 및 비주얼 (9종)
 └── en/                     # English Version
-    ├── 00_core_official/   # Core Tools (8 skills)
+    ├── 00_core_official/   # Core Tools (9 skills)
     ├── 01_automation/      # Daily Automation (8 skills)
     ├── 02_utility/         # Practical Utilities (9 skills)
     ├── 03_gamedev/         # Game Dev and Worldbuilding (9 skills)
@@ -60,7 +60,7 @@ skills/
 | **Claude Code** | `.claude/skills/<skill-name>/SKILL.md` | `"Use brand-guidelines to review this draft and strip out passive voice"` |
 
 ### Built-in Guardrail Standards (Bilingual Parity)
-All 43 skills follow our standard safety and execution principles across both English and Korean versions:
+All 44 skills follow our standard safety and execution principles across both English and Korean versions:
 1. **Stop Before Editing (수정 전 확인 원칙)**: The agent must present the planned modification scope or output a clean draft before overwriting files.
 2. **Draft First, Zero Fluff**: Delivers ready-to-use, actionable drafts immediately without filler explanations or staged openers.
 3. **Fact & Constraint Integrity**: Retains original facts, numeric limits, and architectural bounds without unauthorized creative alterations.
@@ -98,6 +98,14 @@ To use it, add the [English skill](skills/en/02_utility/ai-meeting-room/SKILL.md
 | 6 | **Presentation Deck Architect** | `pptx` | [SKILL.md](skills/en/00_core_official/pptx/SKILL.md) |
 | 7 | **Skill Creator** | `skill-creator` | [SKILL.md](skills/en/00_core_official/skill-creator/SKILL.md) |
 | 8 | **Theme Factory** | `theme-factory` | [SKILL.md](skills/en/00_core_official/theme-factory/SKILL.md) |
+| 9 | **Decision & Assumption Audit** | `decision-assumption-audit` | [SKILL.md](skills/en/00_core_official/decision-assumption-audit/SKILL.md) |
+
+#### 💡 About `decision-assumption-audit`
+Inspired by Addy Osmani's essay *"Critical thinking when agents do the work"*, this skill enforces an evidence-based introspection protocol:
+- **Execution Hold**: Pauses subsequent state changes for the task upon audit invocation until explicit user resumption.
+- **5-Tier Provenance**: Distinguishes guidelines compliance, code inheritance, tool defaults, and agent discretion.
+- **Anti-Rationalization**: Restricts explanations to session-recorded evidence, preventing post-hoc justification.
+- **Claim Boundaries**: Explicitly separates command invocation from exit codes, static analysis, and runtime verification.
 
 ### 01. Daily Automation (Productivity and Cleanup)
 > Automates web article cleanup, browser tab sorting, and task structuring to save you time.
@@ -160,7 +168,7 @@ To use it, add the [English skill](skills/en/02_utility/ai-meeting-room/SKILL.md
 
 ### Ecosystem and Related Resources
 
-Additional catalogs and reference registries for expanding beyond these 43 skills:
+Additional catalogs and reference registries for expanding beyond these 44 skills:
 
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): Community collection of Model Context Protocol servers for databases, browser automation, and developer tools.
 - [MCP reference servers](https://github.com/modelcontextprotocol/servers): Official reference implementations for filesystems, Git, database connectors, and memory.
@@ -200,6 +208,14 @@ Additional catalogs and reference registries for expanding beyond these 43 skill
 | 6 | **발표 슬라이드 기획기** | `pptx` | [SKILL.md](skills/ko/00_core_official/pptx/SKILL.md) |
 | 7 | **AI 스킬 생성기** | `skill-creator` | [SKILL.md](skills/ko/00_core_official/skill-creator/SKILL.md) |
 | 8 | **컬러 팔레트 & 무드보드 생성기** | `theme-factory` | [SKILL.md](skills/ko/00_core_official/theme-factory/SKILL.md) |
+| 9 | **에이전트 임의결정 및 가정 감사기** | `decision-assumption-audit` | [SKILL.md](skills/ko/00_core_official/decision-assumption-audit/SKILL.md) |
+
+#### 💡 `decision-assumption-audit` 안내
+Addy Osmani의 에세이 *"Critical thinking when agents do the work"*에서 영감을 받아 제작된 에이전트 의사결정 감사 프로토콜입니다:
+- **실행 보류 (Execution Hold)**: 감사 요청 시 해당 작업의 신규 쓰기·배포를 일시정지하고 사용자의 명시적 재개 지시 대기.
+- **5단계 출처 구분**: 지침 준수, 기존 코드 승계, 도구 기본값, 에이전트 재량을 명확히 분리.
+- **사후합리화 차단**: 작업 당시 기록된 증거만 인정하며, 기록 없는 사후 변명/포장 금지.
+- **증거 입증 범위 명시**: 명령어 호출과 실행 성공, 코드 부재와 전체 결함을 분리해 과장 보고 방지.
 
 ### 01. 업무 자동화 (Daily Automation)
 > 반복되는 웹 글 정리, 탭 분류, 일정 정리를 보조하여 수작업.
@@ -264,7 +280,7 @@ Additional catalogs and reference registries for expanding beyond these 43 skill
 
 ### 더 많은 도구와 생태계
 
-기본 43종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
+기본 44종 외에 추가적인 도구나 상위 생태계가 필요할 때 참고할 수 있는 저장소입니다.
 
 - [스킬북 (SkillBook)](https://www.getskillbook.com/) (꼬마봇 [@BBBang9900](https://twitter.com/BBBang9900)): 기획, 문서 작성, 일상 업무에 맞춘 한국어 AI 도구와 프롬프트 모음입니다.
 - [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers): 데이터베이스, 브라우저 제어 등 오픈소스 MCP 서버 모음입니다.
