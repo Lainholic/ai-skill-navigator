@@ -1,6 +1,6 @@
 # 🛡️ Universal Agent Guardrails & Parity Standards
 
-> **Scope**: Applied universally across all 43 skills in both English (`skills/en/`) and Korean (`skills/ko/`).
+> **Scope**: Applied universally across every skill in both English (`skills/en/`) and Korean (`skills/ko/`).
 > **Target Runtimes**: Claude Code, Cursor, Windsurf, Codex, and Antigravity.
 
 ---
