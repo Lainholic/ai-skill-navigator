@@ -1,7 +1,7 @@
 # 🔬 AI Skill Navigator — Production Benchmark & Live Evaluation Report
 
 > **Runtime Specification & Verification Record**  
-> - **Platform**: Google Cloud Vertex AI (Project: `ultra-509507`)  
+> - **Platform**: Google Cloud Vertex AI  
 > - **Model**: `gemini-3.8-flash`  
 > - **Verification Date**: 2026-11-15  
 > - **Coverage**: 100% Full Verification across all 45 Production Skills (KO & EN Parity)  
@@ -81,7 +81,7 @@
 <a name="academy-guide"></a>
 ### 소크라테스식 개념 튜터 가이드 / Socratic Conceptual Tutor Guide (`academy-guide`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/academy-guide/SKILL.md) | [EN](skills/en/00_core_official/academy-guide/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -130,7 +130,7 @@ If a friend across town wants to send you a secret message without anyone tamper
 <a name="brand-guidelines"></a>
 ### 브랜드 보이스 가이드 및 문체 검수 / Brand Voice Compass & Editorial Audit (`brand-guidelines`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/brand-guidelines/SKILL.md) | [EN](skills/en/00_core_official/brand-guidelines/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -219,7 +219,7 @@ We are beyond thrilled to unveil our game-changing, revolutionary new ApexTeleme
 <a name="canvas-design"></a>
 ### 캔버스 디자인 — 썸네일 와이어프레임 및 헤드카피 플래너 / Canvas Design — Thumbnail Wireframe and Copy Planner (`canvas-design`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/canvas-design/SKILL.md) | [EN](skills/en/00_core_official/canvas-design/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -279,7 +279,7 @@ We are beyond thrilled to unveil our game-changing, revolutionary new ApexTeleme
 <a name="decision-assumption-audit"></a>
 ### 에이전트 임의 결정 및 가정 추적 감사 / Decision & Assumption Audit (`decision-assumption-audit`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/decision-assumption-audit/SKILL.md) | [EN](skills/en/00_core_official/decision-assumption-audit/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -368,7 +368,7 @@ We are beyond thrilled to unveil our game-changing, revolutionary new ApexTeleme
 <a name="doc-coauthoring"></a>
 ### 문서 공동 작성기 / Collaborative Drafting Partner (`doc-coauthoring`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/doc-coauthoring/SKILL.md) | [EN](skills/en/00_core_official/doc-coauthoring/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -449,7 +449,7 @@ Our core payment processing mesh currently orchestrates transactions across 18 d
 <a name="internal-comms"></a>
 ### 사내 커뮤니케이션 작성기 / Internal Communications Formatter (`internal-comms`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/internal-comms/SKILL.md) | [EN](skills/en/00_core_official/internal-comms/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -507,7 +507,7 @@ Our core payment processing mesh currently orchestrates transactions across 18 d
 <a name="pptx"></a>
 ### 발표 슬라이드 기획기 및 스크립트 설계기 / Presentation Deck Architect & Script Generator (`pptx`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/pptx/SKILL.md) | [EN](skills/en/00_core_official/pptx/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -589,7 +589,7 @@ Our core payment processing mesh currently orchestrates transactions across 18 d
 <a name="skill-creator"></a>
 ### AI 스킬 생성기 / Skill Creator (`skill-creator`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/skill-creator/SKILL.md) | [EN](skills/en/00_core_official/skill-creator/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -715,7 +715,7 @@ Automates the generation of comprehensive, blameless postmortem documentation fr
 <a name="theme-factory"></a>
 ### 테마 팩토리 — 비주얼 아이덴티티 및 5색 팔레트 생성기 / Theme Factory — Visual Identity and Palette Generator (`theme-factory`)
 - **Skill Spec**: [KO](skills/ko/00_core_official/theme-factory/SKILL.md) | [EN](skills/en/00_core_official/theme-factory/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -779,7 +779,7 @@ Automates the generation of comprehensive, blameless postmortem documentation fr
 <a name="landing-carousel-copy"></a>
 ### SNS 캐러셀 및 카드뉴스 카피라이터 / Social Carousel Copywriter (`landing-carousel-copy`)
 - **Skill Spec**: [KO](skills/ko/01_automation/landing-carousel-copy/SKILL.md) | [EN](skills/en/01_automation/landing-carousel-copy/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -853,7 +853,7 @@ To remediate this, teams must map bounded contexts using Event Storming before w
 <a name="real-estate-copywriter"></a>
 ### 부동산 공간 콘셉트 카피라이터 / Real Estate Concept Copywriter (`real-estate-copywriter`)
 - **Skill Spec**: [KO](skills/ko/01_automation/real-estate-copywriter/SKILL.md) | [EN](skills/en/01_automation/real-estate-copywriter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -937,7 +937,7 @@ Thoughtfully zoned for modern executive demands, the floor plan prioritizes func
 <a name="spec-diff-checker"></a>
 ### UI 기획서 및 구현 결과물 대조 검수기 / UI Spec-to-Implementation Diff Inspector (`spec-diff-checker`)
 - **Skill Spec**: [KO](skills/ko/01_automation/spec-diff-checker/SKILL.md) | [EN](skills/en/01_automation/spec-diff-checker/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -1060,7 +1060,7 @@ Thoughtfully zoned for modern executive demands, the floor plan prioritizes func
 <a name="tab-session-organizer"></a>
 ### 브라우저 탭 세션 정리기 / Browser Tab Session Organizer (`tab-session-organizer`)
 - **Skill Spec**: [KO](skills/ko/01_automation/tab-session-organizer/SKILL.md) | [EN](skills/en/01_automation/tab-session-organizer/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -1162,7 +1162,7 @@ Thoughtfully zoned for modern executive demands, the floor plan prioritizes func
 <a name="task-reminder-parser"></a>
 ### 업무 할 일 및 미리알림 변환기 / Task & Reminder Parser (`task-reminder-parser`)
 - **Skill Spec**: [KO](skills/ko/01_automation/task-reminder-parser/SKILL.md) | [EN](skills/en/01_automation/task-reminder-parser/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -1224,7 +1224,7 @@ Thoughtfully zoned for modern executive demands, the floor plan prioritizes func
 <a name="video-metadata-packager"></a>
 ### 유튜브 영상 메타데이터 패키저 / YouTube Video Metadata Packager (`video-metadata-packager`)
 - **Skill Spec**: [KO](skills/ko/01_automation/video-metadata-packager/SKILL.md) | [EN](skills/en/01_automation/video-metadata-packager/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -1291,7 +1291,7 @@ Ideal for indie hackers, full-stack developers, and solo founders looking to cut
 <a name="video-transcript-digest"></a>
 ### 유튜브 영상 자막 압축 요약 및 타임라인 추출기 / Video Transcript Digest and Actionable Timeline Extractor (`video-transcript-digest`)
 - **Skill Spec**: [KO](skills/ko/01_automation/video-transcript-digest/SKILL.md) | [EN](skills/en/01_automation/video-transcript-digest/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -1362,7 +1362,7 @@ Ideal for indie hackers, full-stack developers, and solo founders looking to cut
 <a name="web-article-cleaner"></a>
 ### 웹페이지 본문 정제기 / Web Article Content Cleaner (`web-article-cleaner`)
 - **Skill Spec**: [KO](skills/ko/01_automation/web-article-cleaner/SKILL.md) | [EN](skills/en/01_automation/web-article-cleaner/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -1522,7 +1522,7 @@ Infrastructure engineering teams evaluating this transition must weigh the initi
 <a name="ai-meeting-room"></a>
 ### 로컬 멀티 AI 회의실 웹 애플리케이션 / Local Multi-AI Meeting Room Web Application (`ai-meeting-room`)
 - **Skill Spec**: [KO](skills/ko/02_utility/ai-meeting-room/SKILL.md) | [EN](skills/en/02_utility/ai-meeting-room/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2391,7 +2391,7 @@ pause
 <a name="business-email-formatter"></a>
 ### 비즈니스 이메일 서식 변환기 / Business Email Formatter (`business-email-formatter`)
 - **Skill Spec**: [KO](skills/ko/02_utility/business-email-formatter/SKILL.md) | [EN](skills/en/02_utility/business-email-formatter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2462,7 +2462,7 @@ Best regards,
 <a name="inbox-response-drafter"></a>
 ### 수신 이메일 분류 및 3종 회신 초안 생성기 / Inbox Email Classifier & 3-Draft Response Specialist (`inbox-response-drafter`)
 - **Skill Spec**: [KO](skills/ko/02_utility/inbox-response-drafter/SKILL.md) | [EN](skills/en/02_utility/inbox-response-drafter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2586,7 +2586,7 @@ Marcus
 <a name="messenger-markdown-formatter"></a>
 ### 메신저 가독성 포맷터 (모바일 최적화 변환) / Messenger Markdown Formatter (Mobile Chat Optimizer) (`messenger-markdown-formatter`)
 - **Skill Spec**: [KO](skills/ko/02_utility/messenger-markdown-formatter/SKILL.md) | [EN](skills/en/02_utility/messenger-markdown-formatter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2700,7 +2700,7 @@ A syntax omission in `gateway-config.yaml` caused memory leaks in Envoy proxy po
 <a name="multichannel-content-adapter"></a>
 ### 멀티채널 콘텐츠 변환기 / Multi-Channel Content Adapter (`multichannel-content-adapter`)
 - **Skill Spec**: [KO](skills/ko/02_utility/multichannel-content-adapter/SKILL.md) | [EN](skills/en/02_utility/multichannel-content-adapter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2758,7 +2758,7 @@ Automated retries without jitter and circuit breakers are just self-inflicted DD
 <a name="shortform-script-builder"></a>
 ### 45초 숏폼 영상 대본 생성기 / Short-Form Video Script Generator (`shortform-script-builder`)
 - **Skill Spec**: [KO](skills/ko/02_utility/shortform-script-builder/SKILL.md) | [EN](skills/en/02_utility/shortform-script-builder/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2813,7 +2813,7 @@ Automated retries without jitter and circuit breakers are just self-inflicted DD
 <a name="skill-validation-checklist"></a>
 ### 프롬프트 검수 체크리스트 / Prompt Quality Audit Checklist (`skill-validation-checklist`)
 - **Skill Spec**: [KO](skills/ko/02_utility/skill-validation-checklist/SKILL.md) | [EN](skills/en/02_utility/skill-validation-checklist/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -2958,7 +2958,7 @@ Customer Note: "Large rent transfer failed halfway through."
 <a name="social-thread-formatter"></a>
 ### 소셜 미디어 스레드 포매터 / Social Thread Formatter (`social-thread-formatter`)
 - **Skill Spec**: [KO](skills/ko/02_utility/social-thread-formatter/SKILL.md) | [EN](skills/en/02_utility/social-thread-formatter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3045,7 +3045,7 @@ Save this before your next high-throughput launch 🔁
 <a name="thread-meeting-summarizer"></a>
 ### 스레드 및 회의록 핵심 요약기 / Thread & Meeting Noise Reducer (`thread-meeting-summarizer`)
 - **Skill Spec**: [KO](skills/ko/02_utility/thread-meeting-summarizer/SKILL.md) | [EN](skills/en/02_utility/thread-meeting-summarizer/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3229,7 +3229,7 @@ On Oct 11, 2023, at 11:12 AM, Sarah Chen <schen@acme-fintech.internal> wrote:
 <a name="boardgame-rule-spec"></a>
 ### 보드게임 룰북 및 컴포넌트 명세서 생성 / Board Game Rulebook & Component Architect (`boardgame-rule-spec`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/boardgame-rule-spec/SKILL.md) | [EN](skills/en/03_gamedev/boardgame-rule-spec/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3343,7 +3343,7 @@ Players may perform any combination of the following actions:
 <a name="card-deck-synergy"></a>
 ### TCG 카드 세트 및 시너지 덱 빌더 / TCG Card Set & Synergy Deck Builder (`card-deck-synergy`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/card-deck-synergy/SKILL.md) | [EN](skills/en/03_gamedev/card-deck-synergy/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3398,7 +3398,7 @@ Players may perform any combination of the following actions:
 <a name="character-lore-codex"></a>
 ### 서브컬처 캐릭터 보이스 및 대사 명세서 생성기 / Subculture Character Voice Architecture & In-Game Dialogue Generator (`character-lore-codex`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/character-lore-codex/SKILL.md) | [EN](skills/en/03_gamedev/character-lore-codex/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3460,7 +3460,7 @@ Follow the exact English output template specified in the system guidelines.
 <a name="game-balance-calculator"></a>
 ### 게임 밸런스 및 가챠 확률 계산기 / Game Balance & Gacha Probability Calculator (`game-balance-calculator`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/game-balance-calculator/SKILL.md) | [EN](skills/en/03_gamedev/game-balance-calculator/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3529,7 +3529,7 @@ Provide the complete numerical breakdown formatted strictly to the balancing spe
 <a name="game-review-digest"></a>
 ### 스팀 리뷰 분석 및 벤치마킹 추출기 / Steam Review Digest & Competitor Benchmark (`game-review-digest`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/game-review-digest/SKILL.md) | [EN](skills/en/03_gamedev/game-review-digest/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3603,7 +3603,7 @@ Review 8 (19.7 hrs, Negative): 'RNG seed distribution is broken. Had three conse
 <a name="interactive-fiction-helper"></a>
 ### 인터랙티브 픽션 및 텍스트 TRPG 엔진 / Interactive Fiction & Text TRPG Engine (`interactive-fiction-helper`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/interactive-fiction-helper/SKILL.md) | [EN](skills/en/03_gamedev/interactive-fiction-helper/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -3657,7 +3657,7 @@ Beyond the threshold lies the quarantine junction of Sub-Level 4. Fluorescent ha
 <a name="pixelfx"></a>
 ### 절차적 픽셀 아트 VFX 및 타격 연출 생성기 / Procedural Pixel FX & Action Choreographer (`pixelfx`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/pixelfx/SKILL.md) | [EN](skills/en/03_gamedev/pixelfx/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4053,7 +4053,7 @@ Beyond the threshold lies the quarantine junction of Sub-Level 4. Fluorescent ha
 <a name="rpg-dialogue-formatter"></a>
 ### RPG 메이커 퀘스트 이벤트 대사 및 분기 로직 포맷터 / RPG Maker Quest Event Dialogue & Branch Logic Formatter (`rpg-dialogue-formatter`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/rpg-dialogue-formatter/SKILL.md) | [EN](skills/en/03_gamedev/rpg-dialogue-formatter/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4203,7 +4203,7 @@ Beyond the threshold lies the quarantine junction of Sub-Level 4. Fluorescent ha
 <a name="ttrpg-encounter-helper"></a>
 ### TRPG 즉흥 인카운터 및 기믹 시트 생성기 / TTRPG Impromptu Encounter & Gimmick Generator (`ttrpg-encounter-helper`)
 - **Skill Spec**: [KO](skills/ko/03_gamedev/ttrpg-encounter-helper/SKILL.md) | [EN](skills/en/03_gamedev/ttrpg-encounter-helper/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4264,7 +4264,7 @@ Beyond the threshold lies the quarantine junction of Sub-Level 4. Fluorescent ha
 <a name="2.5d-layer-decomposer"></a>
 ### 2.5D 캐릭터 레이어 분해기 / 2.5D Layer Decomposer (`2.5d-layer-decomposer`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/2.5d-layer-decomposer/SKILL.md) | [EN](skills/en/04_creative_arts/2.5d-layer-decomposer/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4403,7 +4403,7 @@ Root (Model Center)
 <a name="classic-art-palette-curator"></a>
 ### 명화 배색 및 구도 큐레이터 / Classic Art Palette Curator (`classic-art-palette-curator`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/classic-art-palette-curator/SKILL.md) | [EN](skills/en/04_creative_arts/classic-art-palette-curator/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4463,7 +4463,7 @@ Root (Model Center)
 <a name="concept-moodboard-builder"></a>
 ### 시각 컨셉 무드보드 생성기 / Concept Moodboard Builder (`concept-moodboard-builder`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/concept-moodboard-builder/SKILL.md) | [EN](skills/en/04_creative_arts/concept-moodboard-builder/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4517,7 +4517,7 @@ Root (Model Center)
 <a name="inline-svg-generator"></a>
 ### 인라인 SVG 벡터 생성기 / SVG Vector Generator (`inline-svg-generator`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/inline-svg-generator/SKILL.md) | [EN](skills/en/04_creative_arts/inline-svg-generator/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4612,7 +4612,7 @@ Root (Model Center)
 <a name="lyric-melody-harmonizer"></a>
 ### 가사 화성 및 운율 가이드 / Lyric Melody Harmonizer (`lyric-melody-harmonizer`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/lyric-melody-harmonizer/SKILL.md) | [EN](skills/en/04_creative_arts/lyric-melody-harmonizer/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4711,7 +4711,7 @@ Or just forgot the feeling
 <a name="meme-copy-builder"></a>
 ### 바이럴 밈 포맷 카피 빌더 / Viral Meme Format Copy Builder (`meme-copy-builder`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/meme-copy-builder/SKILL.md) | [EN](skills/en/04_creative_arts/meme-copy-builder/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4766,7 +4766,7 @@ Format: Follow the standard Meme Blueprint structure using the classic 'Distract
 <a name="narrative-plot-oracle"></a>
 ### 타로 기반 서사 플롯 오라클 / Tarot Narrative Plot Oracle (`narrative-plot-oracle`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/narrative-plot-oracle/SKILL.md) | [EN](skills/en/04_creative_arts/narrative-plot-oracle/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4814,7 +4814,7 @@ The drive clicked free from the rack with a sound no louder than a snapped tooth
 <a name="sensory-scene-describer"></a>
 ### 조향 구조 기반 공감각적 공간 묘사기 / Sensory Scene Describer (`sensory-scene-describer`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/sensory-scene-describer/SKILL.md) | [EN](skills/en/04_creative_arts/sensory-scene-describer/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4867,7 +4867,7 @@ The drive clicked free from the rack with a sound no louder than a snapped tooth
 <a name="video-breakdown-navigator"></a>
 ### 영상 분해 네비게이터 / Video Breakdown Navigator (`video-breakdown-navigator`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/video-breakdown-navigator/SKILL.md) | [EN](skills/en/04_creative_arts/video-breakdown-navigator/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**
@@ -4986,7 +4986,7 @@ Based on the description.
 <a name="visual-prompt-optimizer"></a>
 ### 비주얼 프롬프트 옵티마이저 / Visual Prompt Optimizer (`visual-prompt-optimizer`)
 - **Skill Spec**: [KO](skills/ko/04_creative_arts/visual-prompt-optimizer/SKILL.md) | [EN](skills/en/04_creative_arts/visual-prompt-optimizer/SKILL.md)
-- **Runtime Status**: Verified on `gemini-3.8-flash` (Vertex AI `ultra-509507`)
+- **Runtime Status**: Verified on `gemini-3.8-flash` (Google Cloud Vertex AI)
 
 #### 1. Real Input Examples (실전 프롬프트 3종)
 **[한국어 프롬프트]**

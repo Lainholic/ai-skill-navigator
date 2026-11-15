@@ -52,7 +52,7 @@ skills/
 # English Catalog
 
 ### 🔬 Production-Grade Live Verification (Vertex AI `gemini-3.8-flash`)
-All 45 skills have been rigorously benchmarked and live-verified on Google Cloud Vertex AI using the **`gemini-3.8-flash`** runtime (Project: `ultra-509507`, Verified: 2026-11-15).
+All 45 skills have been rigorously benchmarked and live-verified on Google Cloud Vertex AI using the **`gemini-3.8-flash`** runtime (Verified: 2026-11-15).
 - **Zero Hallucination / Real Outputs**: Every skill deliverable is an unedited, standalone production artifact (pure inline SVG vectors, complete C# scripts, full game design specs, JSON schemas).
 - **Failure Modes & Technical Limits**: Honestly documents 3 candid runtime constraints per skill (e.g. geometric precision, cross-browser CSS leakage, context bleed).
 - **Interactive Live Viewer**: Explore prompts, raw outputs, and failure modes interactively at [**synapse-creative.com/skills**](https://synapse-creative.com/skills).
@@ -190,7 +190,7 @@ Additional catalogs and reference registries for expanding beyond this collectio
 # 한국어 카탈로그
 
 ### 🔬 프로덕션 실기 전수 검증 기록 (Vertex AI `gemini-3.8-flash`)
-45종 스킬 전체를 Google Cloud Vertex AI **`gemini-3.8-flash`** 런타임(프로젝트: `ultra-509507`, 검증일: 2026-11-15)에서 1:1로 직접 구동하여 실측을 완료했습니다.
+45종 스킬 전체를 Google Cloud Vertex AI **`gemini-3.8-flash`** 런타임(검증일: 2026-11-15)에서 1:1로 직접 구동하여 실측을 완료했습니다.
 - **날것 그대로의 실전 산출물**: 임의 요약이나 메타 설명을 일절 배제하고, 모델이 프롬프트를 수행하여 직접 출력한 완성형 코드(순수 인라인 SVG, C# 유니티 스크립트, 마크다운 룰북, 스키마 등)를 100% 보존 탑재했습니다.
 - **솔직한 한계점 (Failure Modes)**: 실무 현장에서 실제로 부딪히는 구체적 기술 한계 3종을 가감 없이 기록했습니다.
 - **인터랙티브 웹 뷰어**: [**synapse-creative.com/skills**](https://synapse-creative.com/skills)에서 45종 전수의 실전 인풋 3종, 원문 아웃풋, 한계점을 클릭 한 번으로 확인하고 복사할 수 있습니다.
