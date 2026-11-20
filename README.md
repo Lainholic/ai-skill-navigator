@@ -38,12 +38,16 @@ Most coding agents ignore installed skills and jump straight into generating cod
 1. **Hold Direct Execution**: When receiving a new user instruction, never jump directly to code generation or output based solely on pre-trained memory.
 2. **Step 1: Scan & Brief**:
    - Scan installed skills (`SKILL.md` files) against the current task context.
-   - If relevant skills are found, halt execution and brief the user:
+   - **If Relevant Skills Found**: Halt execution and brief the user:
      * **Primary Recommendation**: [Skill Name] (1-sentence reason)
      * **Complementary Options**: [Auxiliary Skill Names] (why pairing helps)
      * **Confirmation**: "Proceed with `[Skill Name]` as primary, or include any complementary skills?"
+   - **If No Relevant Skill Found**: Proceed directly with standard execution without blocking.
 3. **Step 2: Proof of Tool Call Required**: Upon user confirmation, the agent MUST read `SKILL.md` via file inspection tools before generating deliverables. Outputs produced without logged skill reading are void.
-4. **Exceptions**: Skip briefing if the user explicitly named a skill, in ongoing approved multi-turn tasks, or for simple factual Q&A.
+4. **Exceptions**:
+   - If the user explicitly named a skill: Skip briefing confirmation, but reading `SKILL.md` before execution remains mandatory.
+   - In ongoing approved multi-turn tasks.
+   - For simple factual Q&A or casual chat.
 ```
 
 ---
@@ -232,20 +236,20 @@ Additional catalogs and reference registries for expanding beyond this collectio
 
 2. **1단계: 보유 스킬 선제 매칭 및 옵션 브리핑**
    - 작업을 시작하기 전, 환경에 등록된 전문 스킬(Skills/MCP/도구 매뉴얼) 목록을 먼저 스캔한다.
-   - 현재 작업 맥락과 도메인에 부합하는 스킬이 있을 경우, 본 작업을 보류하고 사용자에게 다음 형식으로 먼저 공지한다.
+   - **적합한 스킬이 확인된 경우**: 본 작업을 보류하고 사용자에게 다음 형식으로 먼저 공지한다.
      * **메인 추천**: [스킬명] (적용 이유 및 핵심 역할 1줄 요약)
      * **함께 연계할 수 있는 스킬**: [보조 스킬명 1~2개] (함께 쓰면 좋은 이유)
      * **확인 질문**: "메인으로 `[스킬명]` 규격을 로드하여 진행할까요? 아니면 특정 연계 스킬도 함께 반영할까요?"
+   - **적합한 스킬이 없는 경우**: 스킬 탐색 범위에 해당 전문 스킬이 없음을 인지하고, 지체 없이 통상적인 기본 작업으로 직행한다.
 
 3. **2단계: 도구 호출 증거 필수 (Tool Call Proof)**
    - 사용자의 승인을 받거나 스킬 적용이 확정되면, 실제 코드 작성 전에 반드시 해당 스킬의 지침 파일(`SKILL.md`)을 파일 읽기 도구로 먼저 열람하여 도구 호출 로그를 증거로 남겨야 한다.
    - 스킬 지침을 실제로 읽은 도구 호출 기록 없이 생성된 작업 산출물은 무효로 간주하며, 즉시 출력을 중단하고 지침을 읽은 후 재작성한다.
 
 4. **예외 사항 (대화 피로도 방지)**
-   - 사용자가 지시문에 이미 특정 스킬명을 명시한 경우
+   - 사용자가 지시문에 이미 특정 스킬명을 명시한 경우: 추천 확인 단계만 생략하되, 해당 스킬 지침(SKILL.md) 사전 열람은 반드시 수행한다.
    - 이미 승인을 받아 진행 중인 작업의 후속 연속 대화인 경우
    - 단순 사실 확인, 일반 질의응답, 일상 대화인 경우
-   - (위 예외 상황에서는 확인 질문을 생략하고 즉시 수행한다.)
 ```
 
 ### AI 회의실
