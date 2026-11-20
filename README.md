@@ -28,6 +28,26 @@ Compatible with Claude Code, Cursor, Antigravity, and other Agent Skills tools.
 
 ---
 
+### 💡 Pro-Tip: Force Your Agent to Proactively Recommend Skills
+
+Most coding agents ignore installed skills and jump straight into generating code from memory. Add this hard gate to your `.cursorrules`, `CLAUDE.md`, or `AGENTS.md` so your agent scans your skills first, briefs you on the primary match + complementary options, and asks for confirmation before writing a single line of code:
+
+```markdown
+## [Mandatory Rule] Proactive Skill Matching & Pre-read Hard Gate
+
+1. **Hold Direct Execution**: When receiving a new user instruction, never jump directly to code generation or output based solely on pre-trained memory.
+2. **Step 1: Scan & Brief**:
+   - Scan installed skills (`SKILL.md` files) against the current task context.
+   - If relevant skills are found, halt execution and brief the user:
+     * **Primary Recommendation**: [Skill Name] (1-sentence reason)
+     * **Complementary Options**: [Auxiliary Skill Names] (why pairing helps)
+     * **Confirmation**: "Proceed with `[Skill Name]` as primary, or include any complementary skills?"
+3. **Step 2: Proof of Tool Call Required**: Upon user confirmation, the agent MUST read `SKILL.md` via file inspection tools before generating deliverables. Outputs produced without logged skill reading are void.
+4. **Exceptions**: Skip briefing if the user explicitly named a skill, in ongoing approved multi-turn tasks, or for simple factual Q&A.
+```
+
+---
+
 ## Directory Structure
 
 ```
@@ -200,6 +220,33 @@ Additional catalogs and reference registries for expanding beyond this collectio
 1. 필요한 도구를 `skills/ko/<카테고리>/<스킬이름>/SKILL.md`에서 확인합니다.
 2. 시스템 프롬프트 또는 에이전트 지침 폴더에 복사해 넣습니다.
 3. 각 스킬의 안내에 따라 에이전트에게 작업을 요청합니다. AI 회의실 스킬은 맞춤형 프로그램 제작 지침과 함께 즉시 실행 가능한 `examples/` 예시 앱을 포함합니다.
+
+#### 💡 실무 꿀팁: AI가 스킬을 건너뛰지 않고 먼저 제안하게 만드는 프롬프트 규칙
+에이전트에 스킬을 아무리 많이 넣어둬도, AI는 자체 지식으로 아는 척하며 코드를 곧바로 작성해 버리는 경우가 많습니다. 자신의 에이전트 규칙 파일(`.cursorrules`, `CLAUDE.md`, `AGENTS.md`)에 아래 규칙을 넣어두면, AI가 작업 착수 전 **스킬을 먼저 스캔하여 메인 추천 + 연계 옵션을 브리핑하고 사용자 승인을 구하도록 강제**할 수 있습니다.
+
+```markdown
+## [필수 규칙] 전문 스킬 선제 매칭·브리핑 및 사전 열람 하드 게이트
+
+1. **본 작업 직행 금지 (Hold)**
+   - 사용자의 새로운 작업 지시를 받았을 때, 모델의 사전 지식만으로 임의 판단하여 곧바로 코드 작성이나 본문 답변으로 직행하는 행위를 엄격히 금지한다.
+
+2. **1단계: 보유 스킬 선제 매칭 및 옵션 브리핑**
+   - 작업을 시작하기 전, 환경에 등록된 전문 스킬(Skills/MCP/도구 매뉴얼) 목록을 먼저 스캔한다.
+   - 현재 작업 맥락과 도메인에 부합하는 스킬이 있을 경우, 본 작업을 보류하고 사용자에게 다음 형식으로 먼저 공지한다.
+     * **메인 추천**: [스킬명] (적용 이유 및 핵심 역할 1줄 요약)
+     * **함께 연계할 수 있는 스킬**: [보조 스킬명 1~2개] (함께 쓰면 좋은 이유)
+     * **확인 질문**: "메인으로 `[스킬명]` 규격을 로드하여 진행할까요? 아니면 특정 연계 스킬도 함께 반영할까요?"
+
+3. **2단계: 도구 호출 증거 필수 (Tool Call Proof)**
+   - 사용자의 승인을 받거나 스킬 적용이 확정되면, 실제 코드 작성 전에 반드시 해당 스킬의 지침 파일(`SKILL.md`)을 파일 읽기 도구로 먼저 열람하여 도구 호출 로그를 증거로 남겨야 한다.
+   - 스킬 지침을 실제로 읽은 도구 호출 기록 없이 생성된 작업 산출물은 무효로 간주하며, 즉시 출력을 중단하고 지침을 읽은 후 재작성한다.
+
+4. **예외 사항 (대화 피로도 방지)**
+   - 사용자가 지시문에 이미 특정 스킬명을 명시한 경우
+   - 이미 승인을 받아 진행 중인 작업의 후속 연속 대화인 경우
+   - 단순 사실 확인, 일반 질의응답, 일상 대화인 경우
+   - (위 예외 상황에서는 확인 질문을 생략하고 즉시 수행한다.)
+```
 
 ### AI 회의실
 
